@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历 | 前端技术专家 - AI 驱动工程实践者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+       .gradient-text { background: linear-gradient(90deg, #2563eb, #0ea5e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+       .card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); transition: transform 0.2s; }
+       .card:hover { transform: translateY(-2px); }
+       .skill-tag { background: #eff6ff; color: #1e40af; padding: 4px 12px; border-radius: 9999px; font-size: 0.875rem; border: 1px solid #dbeafe; }
+    </style>
+</head>
+<body class="text-slate-800 leading-relaxed">
+
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">前端技术专家</h1>
+            <div class="flex gap-4 mt-3 md:mt-0 text-sm font-medium text-slate-500">
+                <span><i class="fas fa-phone mr-1"></i> [手机号]</span>
+                <span><i class="fas fa-envelope mr-1"></i> [邮箱]</span>
+                <span><i class="fas fa-location-dot mr-1"></i> [城市]</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+        
+        <section>
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-user-tie mr-3 text-blue-600"></i>职业总结</h2>
+            <div class="card p-6 border-l-4 border-blue-600">
+                <p class="text-slate-600">
+                    <strong>9年前端开发资深专家</strong>，深耕企业级 SaaS、大规模 B/C 端平台。精通 <strong>Vue/React + TypeScript</strong> 架构，在微前端架构（Qiankun）及高性能大数据渲染领域有深厚实战积累。
+                    <br><br>
+                    <strong>AI 增强工程专家：</strong>近一年通过 <strong>Cursor/Trae</strong> 实现 80% 代码由 AI 生成。擅长上下文工程（Context Engineering）与架构规则设计（.mdc），将交付效率提升 5 倍，专注于保障高合规性代码产出。
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-code mr-3 text-blue-600"></i>技术版图</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-5">
+                    <h3 class="font-semibold mb-3 text-blue-700">核心架构</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Vue/React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">微前端(Qiankun)</span>
+                        <span class="skill-tag">Monorepo(pnpm)</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="card p-5">
+                    <h3 class="font-semibold mb-3 text-blue-700">高性能/跨端</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">UniApp</span>
+                        <span class="skill-tag">微信小程序</span>
+                        <span class="skill-tag">Canvas/WebGL</span>
+                        <span class="skill-tag">LTTB 采样算法</span>
+                        <span class="skill-tag">WebWorkers</span>
+                    </div>
+                </div>
+                <div class="card p-5">
+                    <h3 class="font-semibold mb-3 text-blue-700">AI 开发工作流</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Cursor/Trae 专家</span>
+                        <span class="skill-tag">上下文设计</span>
+                        <span class="skill-tag">提示词工程</span>
+                        <span class="skill-tag">Automated Testing</span>
+                    </div>
+                </div>
+                <div class="card p-5">
+                    <h3 class="font-semibold mb-3 text-blue-700">工程化与协作</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">CI/CD(GitHub Actions)</span>
+                        <span class="skill-tag">Design System</span>
+                        <span class="skill-tag">Design Tokens</span>
+                        <span class="skill-tag">Jest/Cypress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-8">
+            <h2 class="text-xl font-bold flex items-center"><i class="fas fa-briefcase mr-3 text-blue-600"></i>实战经历</h2>
+            
+            <div class="relative pl-8 border-l-2 border-slate-200 py-1">
+                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-lg font-bold text-slate-900">[当前集团] | 技术平台部</h3>
+                    <span class="text-blue-600 font-semibold">2018.XX – 至今</span>
+                </div>
+                <p class="text-sm text-blue-600 font-medium mb-4 italic">前端技术专家</p>
+                <ul class="space-y-3 text-slate-600 text-sm list-disc pl-4">
+                    <li><strong>微前端架构重构：</strong>主导集团核心平台微前端化（Qiankun），将巨型单体应用拆分为 12 个独立模块。实现了团队间的解耦并行交付，回归测试成本降低 40%。</li>
+                    <li><strong>AI 驱动 SDLC 革命：</strong>深度运用 <strong>Cursor 与 Trae</strong> 进行“上下文工程”实践。通过编写.cursorrules 架构边界文件，使 <strong>80% 的生产代码由 AI 生成</strong>，复杂业务组件开发周期从 5 天缩短至 1 天。</li>
+                    <li><strong>百万级数据渲染优化：</strong>针对数据平台百万级散点图/曲线，采用 <strong>Canvas 2D 离屏绘制与多线程处理</strong>，首屏加载指标（LCP）提升 60%，解决了科学级高频交互下的掉帧问题。</li>
+                    <li><strong>设计系统自动化：</strong>主导 <strong>Design System</strong> 落地，通过 <code>Style Dictionary</code> 自动化同步 Figma 设计令牌，确保 B 端 SaaS 与跨端小程序保持 99.8% 的视觉还原度。</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-200 py-1">
+                <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-lg font-bold text-slate-900">[大型连锁餐饮] | 供应链 SaaS</h3>
+                    <span class="text-slate-500 font-semibold">2016.XX – 2018.XX</span>
+                </div>
+                <p class="text-sm text-slate-500 font-medium mb-4 italic">资深前端开发</p>
+                <ul class="space-y-3 text-slate-600 text-sm list-disc pl-4">
+                    <li><strong>核心 SaaS 构建：</strong>负责餐饮供应链核心交互设计（库存流转、采购审批流水线），支撑高并发 B 端业务逻辑。</li>
+                    <li><strong>实时冷链监控看板：</strong>开发实时监控看板，利用 <strong>LTTB 数据降维算法</strong> 在移动混合端（Hybrid App）流畅呈现 50,000+ 数据点的实时温度曲线，保障冷链合规性。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-graduation-cap mr-3 text-blue-600"></i>教育经历</h2>
+            <div class="card p-6 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h3 class="font-bold text-slate-900 text-lg">北京邮电大学世纪学院 (BUPT Century College)</h3>
+                    <p class="text-slate-600">媒体技术专业 | 工学学士 (Bachelor of Engineering)</p>
+                </div>
+                <span class="mt-2 md:mt-0 text-slate-500 font-medium">2012 – 2016</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white py-10 mt-10">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm">© 2026 基于 AI 辅助工程实践优化 | 致力于高性能、合规性与效率的统一</p>
+        </div>
+    </footer>
+
+</body>
+</html>
