@@ -1,778 +1,1333 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>张倩 · 前端技术专家 · 简历</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-–ink: #1a1a2e;
-–ink-light: #3d3d5c;
-–ink-muted: #7a7a9a;
-–accent: #0d6e6e;
-–accent-light: #0fa8a8;
-–accent-pale: #e0f4f4;
-–gold: #c9a84c;
-–gold-pale: #fdf6e3;
-–rule: #d4d4e8;
-–bg: #fafaf8;
-–white: #ffffff;
-–sidebar-bg: #111827;
-–sidebar-text: #e2e8f0;
-–sidebar-muted: #94a3b8;
-–sidebar-accent: #22d3ee;
-}
-
-@page { size: A4; margin: 0; }
-
-html { font-size: 14px; background: #e8e8e0; }
-
-body {
-font-family: ‘Noto Sans SC’, sans-serif;
-color: var(–ink);
-background: #e8e8e0;
-min-height: 100vh;
-display: flex;
-justify-content: center;
-padding: 32px 16px;
-}
-
-/* ══ DESKTOP layout ══════════════════════════════ */
-.page {
-width: 210mm;
-min-height: 297mm;
-background: var(–white);
-display: grid;
-grid-template-columns: 68mm 1fr;
-box-shadow: 0 8px 48px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1);
-position: relative;
-overflow: hidden;
-}
-
-/* ══ TABLET ══════════════════════════════════════ */
-@media (max-width: 900px) and (min-width: 601px) {
-html { font-size: 12px; }
-body { padding: 16px 8px; }
-.page { width: 100%; max-width: 210mm; grid-template-columns: 58mm 1fr; }
-}
-
-/* ══ MOBILE: single column ═══════════════════════ */
-@media (max-width: 600px) {
-html { font-size: 14px; }
-body { padding: 0; background: var(–sidebar-bg); }
-
-```
-.page {
-  width: 100%;
-  min-height: 100vh;
-  grid-template-columns: 1fr;
-  box-shadow: none;
-}
-
-/* Sidebar becomes top banner on mobile */
-.sidebar {
-  padding: 28px 20px 24px !important;
-}
-
-.profile-block {
-  display: flex !important;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px !important;
-}
-
-.avatar-ring {
-  width: 60px !important;
-  height: 60px !important;
-  margin-bottom: 0 !important;
-  flex-shrink: 0;
-}
-
-.avatar-initial { font-size: 22px !important; }
-.name-cn { font-size: 20px !important; letter-spacing: 3px !important; }
-
-/* Two-column skill layout on mobile */
-.sidebar-skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 12px;
-}
-
-.skill-tag { font-size: 12px !important; padding: 4px 8px !important; }
-
-/* Main area */
-.main {
-  padding: 24px 18px 40px !important;
-  background: var(--white);
-}
-
-.target-role { font-size: 24px !important; }
-.summary { font-size: 12px !important; }
-
-/* Stack exp meta vertically */
-.exp-meta { flex-direction: column; gap: 4px; }
-.exp-period { align-self: flex-start; }
-
-/* Stack project cards */
-.project-grid { grid-template-columns: 1fr !important; }
-
-/* Wider achieve items */
-.achieve-item { font-size: 12px !important; }
-.achieve-num { font-size: 14px !important; }
-```
-
-}
-
-/* ── SIDEBAR ─────────────────────────────────── */
-.sidebar {
-background: var(–sidebar-bg);
-color: var(–sidebar-text);
-padding: 44px 24px 36px;
-display: flex;
-flex-direction: column;
-gap: 0;
-position: relative;
-overflow: hidden;
-}
-
-.sidebar::before {
-content: ‘’;
-position: absolute;
-top: -80px; left: -80px;
-width: 240px; height: 240px;
-background: radial-gradient(circle, rgba(34,211,238,0.12) 0%, transparent 70%);
-pointer-events: none;
-}
-
-.sidebar::after {
-content: ‘’;
-position: absolute;
-bottom: 60px; right: -60px;
-width: 180px; height: 180px;
-background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
-pointer-events: none;
-}
-
-.profile-block { margin-bottom: 32px; position: relative; }
-
-.avatar-ring {
-width: 84px; height: 84px;
-border-radius: 50%;
-border: 2px solid var(–sidebar-accent);
-display: flex; align-items: center; justify-content: center;
-margin-bottom: 16px;
-position: relative;
-flex-shrink: 0;
-}
-
-.avatar-ring::after {
-content: ‘’;
-position: absolute;
-inset: 4px;
-border-radius: 50%;
-background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-}
-
-.avatar-initial {
-font-family: ‘Noto Serif SC’, serif;
-font-size: 28px;
-font-weight: 700;
-color: var(–sidebar-accent);
-position: relative;
-z-index: 1;
-letter-spacing: 2px;
-}
-
-.profile-text { flex: 1; min-width: 0; }
-
-.name-cn {
-font-family: ‘Noto Serif SC’, serif;
-font-size: 22px;
-font-weight: 700;
-color: #ffffff;
-letter-spacing: 4px;
-margin-bottom: 4px;
-}
-
-.name-title {
-font-size: 11px;
-color: var(–sidebar-accent);
-letter-spacing: 2px;
-text-transform: uppercase;
-font-weight: 500;
-}
-
-.sidebar-section { margin-bottom: 24px; }
-
-.sidebar-section-title {
-font-size: 9.5px;
-font-weight: 700;
-letter-spacing: 2.5px;
-text-transform: uppercase;
-color: var(–sidebar-accent);
-margin-bottom: 12px;
-padding-bottom: 6px;
-border-bottom: 1px solid rgba(34,211,238,0.2);
-}
-
-.contact-item {
-display: flex;
-align-items: flex-start;
-gap: 8px;
-margin-bottom: 8px;
-font-size: 11.5px;
-color: var(–sidebar-muted);
-line-height: 1.5;
-}
-
-.contact-icon {
-width: 14px; flex-shrink: 0;
-color: var(–sidebar-accent);
-margin-top: 1px; font-style: normal; font-size: 12px;
-}
-
-.contact-val { color: var(–sidebar-text); font-size: 11.5px; }
-
-/* Location proximity highlight */
-.location-highlight {
-display: flex;
-align-items: flex-start;
-gap: 7px;
-background: rgba(34,211,238,0.07);
-border: 1px solid rgba(34,211,238,0.18);
-border-left: 2px solid var(–sidebar-accent);
-border-radius: 4px;
-padding: 7px 10px;
-margin: 4px 0 10px;
-}
-
-.loc-icon { font-size: 13px; flex-shrink: 0; line-height: 1.5; }
-
-.location-highlight-text {
-font-size: 10.5px;
-color: rgba(226,232,240,0.75);
-line-height: 1.55;
-}
-
-.location-highlight-text strong {
-color: #22d3ee;
-font-weight: 600;
-}
-
-.skill-group { margin-bottom: 13px; }
-
-.skill-group-label {
-font-size: 9px; font-weight: 700;
-letter-spacing: 1.5px; text-transform: uppercase;
-color: var(–sidebar-muted); margin-bottom: 6px;
-}
-
-.skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-
-.skill-tag {
-font-size: 10px; padding: 3px 7px;
-border-radius: 3px; font-weight: 500;
-letter-spacing: 0.3px; line-height: 1.4;
-}
-
-.tag-primary {
-background: rgba(34,211,238,0.15);
-color: var(–sidebar-accent);
-border: 1px solid rgba(34,211,238,0.25);
-}
-
-.tag-secondary {
-background: rgba(148,163,184,0.1);
-color: var(–sidebar-muted);
-border: 1px solid rgba(148,163,184,0.15);
-}
-
-.tag-gold {
-background: rgba(201,168,76,0.12);
-color: #e0b95a;
-border: 1px solid rgba(201,168,76,0.2);
-}
-
-.edu-item { margin-bottom: 10px; }
-.edu-school { font-size: 11.5px; font-weight: 600; color: var(–sidebar-text); margin-bottom: 2px; }
-.edu-major { font-size: 10.5px; color: var(–sidebar-muted); margin-bottom: 1px; }
-.edu-year { font-size: 10px; color: rgba(34,211,238,0.7); }
-
-/* ── MAIN ─────────────────────────────────────── */
-.main {
-padding: 44px 32px 36px 30px;
-display: flex;
-flex-direction: column;
-gap: 0;
-}
-
-.main-header {
-margin-bottom: 22px;
-padding-bottom: 18px;
-border-bottom: 1.5px solid var(–rule);
-position: relative;
-}
-
-.main-header::after {
-content: ‘’;
-position: absolute;
-bottom: -1.5px; left: 0;
-width: 48px; height: 3px;
-background: var(–accent);
-border-radius: 2px;
-}
-
-.target-role {
-font-family: ‘Crimson Pro’, serif;
-font-size: 28px; font-weight: 300;
-color: var(–ink); letter-spacing: 1px;
-line-height: 1.2; margin-bottom: 8px;
-}
-
-.target-role em { font-style: italic; color: var(–accent); font-weight: 400; }
-
-.summary {
-font-size: 11.5px;
-color: var(–ink-light);
-line-height: 1.8;
-}
-
-.summary strong { color: var(–accent); font-weight: 600; }
-
-.section { margin-bottom: 20px; }
-
-.section-header {
-display: flex; align-items: center;
-gap: 10px; margin-bottom: 12px;
-}
-
-.section-title {
-font-family: ‘Noto Serif SC’, serif;
-font-size: 13px; font-weight: 700;
-color: var(–ink); letter-spacing: 2px;
-white-space: nowrap;
-}
-
-.section-line { flex: 1; height: 1px; background: linear-gradient(to right, var(–rule), transparent); }
-.section-dot { width: 6px; height: 6px; border-radius: 50%; background: var(–accent); flex-shrink: 0; }
-
-.exp-item {
-margin-bottom: 16px;
-padding-left: 14px;
-border-left: 2px solid var(–rule);
-position: relative;
-}
-
-.exp-item::before {
-content: ‘’;
-position: absolute;
-left: -5px; top: 5px;
-width: 8px; height: 8px;
-border-radius: 50%;
-background: var(–accent);
-border: 2px solid var(–white);
-box-shadow: 0 0 0 1px var(–accent);
-}
-
-.exp-meta {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-margin-bottom: 3px;
-flex-wrap: wrap;
-gap: 4px;
-}
-
-.exp-company {
-font-size: 13px; font-weight: 700;
-color: var(–ink);
-font-family: ‘Noto Serif SC’, serif;
-}
-
-.exp-period {
-font-size: 10.5px;
-white-space: nowrap;
-background: var(–accent-pale);
-padding: 2px 7px;
-border-radius: 10px;
-color: var(–accent);
-font-weight: 500;
-}
-
-.exp-role {
-font-size: 11px; color: var(–accent);
-font-weight: 500; margin-bottom: 7px;
-letter-spacing: 0.5px;
-}
-
-.exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 4px; }
-
-.exp-bullets li {
-font-size: 11.5px;
-color: var(–ink-light);
-line-height: 1.65;
-padding-left: 12px;
-position: relative;
-}
-
-.exp-bullets li::before {
-content: ‘›’;
-position: absolute; left: 0;
-color: var(–accent-light);
-font-weight: 700; font-size: 13px; line-height: 1.5;
-}
-
-.exp-bullets li strong { color: var(–ink); font-weight: 600; }
-
-.project-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
-}
-
-.proj-card {
-border: 1px solid var(–rule);
-border-radius: 6px;
-padding: 12px 14px;
-background: var(–bg);
-position: relative;
-overflow: hidden;
-}
-
-.proj-card::before {
-content: ‘’;
-position: absolute;
-top: 0; left: 0; right: 0;
-height: 2px;
-background: var(–accent);
-}
-
-.proj-card.highlight::before {
-background: linear-gradient(to right, var(–accent), var(–gold));
-}
-
-.proj-name {
-font-size: 11.5px; font-weight: 700;
-color: var(–ink); margin-bottom: 4px;
-font-family: ‘Noto Serif SC’, serif;
-}
-
-.proj-type {
-display: inline-block;
-font-size: 9px; padding: 1px 6px;
-border-radius: 3px;
-background: var(–accent-pale);
-color: var(–accent); font-weight: 600;
-letter-spacing: 0.5px; margin-bottom: 6px;
-text-transform: uppercase;
-}
-
-.proj-desc { font-size: 10.5px; color: var(–ink-light); line-height: 1.6; margin-bottom: 6px; }
-.proj-tech { display: flex; flex-wrap: wrap; gap: 3px; }
-
-.proj-tech-tag {
-font-size: 9.5px; padding: 1px 5px;
-border-radius: 2px;
-background: rgba(13,110,110,0.07);
-color: var(–accent); font-weight: 500;
-border: 1px solid rgba(13,110,110,0.12);
-}
-
-.achieve-box {
-background: linear-gradient(135deg, var(–gold-pale) 0%, #fefefe 100%);
-border: 1px solid rgba(201,168,76,0.3);
-border-left: 3px solid var(–gold);
-border-radius: 4px;
-padding: 10px 14px;
-margin-bottom: 10px;
-}
-
-.achieve-box-title {
-font-size: 10px; font-weight: 700;
-color: #8b6914; letter-spacing: 1px;
-text-transform: uppercase; margin-bottom: 6px;
-}
-
-.achieve-list { display: flex; flex-direction: column; gap: 4px; }
-
-.achieve-item {
-display: flex; align-items: flex-start;
-gap: 6px; font-size: 11px;
-color: var(–ink-light); line-height: 1.55;
-}
-
-.achieve-num {
-font-weight: 700; color: var(–accent);
-white-space: nowrap;
-font-family: ‘Crimson Pro’, serif;
-font-size: 13px;
-}
-
-@media print {
-body { background: white; padding: 0; }
-.page { box-shadow: none; width: 210mm; min-height: 297mm; grid-template-columns: 68mm 1fr; }
-html { font-size: 13px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张倩 · 前端技术专家 · 简历</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      –ink: #1a1a2e;
+      –ink-light: #3d3d5c;
+      –ink-muted: #7a7a9a;
+      –accent: #0d6e6e;
+      –accent-light: #0fa8a8;
+      –accent-pale: #e0f4f4;
+      –gold: #c9a84c;
+      –gold-pale: #fdf6e3;
+      –rule: #d4d4e8;
+      –bg: #fafaf8;
+      –white: #ffffff;
+      –sidebar-bg: #111827;
+      –sidebar-text: #e2e8f0;
+      –sidebar-muted: #94a3b8;
+      –sidebar-accent: #22d3ee;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    html {
+      font-size: 14px;
+      background: #e8e8e0;
+    }
+
+    body {
+      font-family: ‘Noto Sans SC’, sans-serif;
+      color: var(–ink);
+      background: #e8e8e0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    /* ══ DESKTOP layout ══════════════════════════════ */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(–white);
+      display: grid;
+      grid-template-columns: 68mm 1fr;
+      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ══ TABLET ══════════════════════════════════════ */
+    @media (max-width: 900px) and (min-width: 601px) {
+      html {
+        font-size: 12px;
+      }
+
+      body {
+        padding: 16px 8px;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 210mm;
+        grid-template-columns: 58mm 1fr;
+      }
+    }
+
+    /* ══ MOBILE: single column ═══════════════════════ */
+    @media (max-width: 600px) {
+      html {
+        font-size: 14px;
+      }
+
+      body {
+        padding: 0;
+        background: var(–sidebar-bg);
+      }
+
+      .page {
+        width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        box-shadow: none;
+      }
+
+      /* Sidebar becomes top banner on mobile */
+      .sidebar {
+        padding: 28px 20px 24px !important;
+      }
+
+      .profile-block {
+        display: flex !important;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px !important;
+      }
+
+      .avatar-ring {
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 0 !important;
+        flex-shrink: 0;
+      }
+
+      .avatar-initial {
+        font-size: 22px !important;
+      }
+
+      .name-cn {
+        font-size: 20px !important;
+        letter-spacing: 3px !important;
+      }
+
+      /* Two-column skill layout on mobile */
+      .sidebar-skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+      }
+
+      .skill-tag {
+        font-size: 12px !important;
+        padding: 4px 8px !important;
+      }
+
+      /* Main area */
+      .main {
+        padding: 24px 18px 40px !important;
+        background: var(--white);
+      }
+
+      .target-role {
+        font-size: 24px !important;
+      }
+
+      .summary {
+        font-size: 12px !important;
+      }
+
+      /* Stack exp meta vertically */
+      .exp-meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .exp-period {
+        align-self: flex-start;
+      }
+
+      /* Stack project cards */
+      .project-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Wider achieve items */
+      .achieve-item {
+        font-size: 12px !important;
+      }
+
+      .achieve-num {
+        font-size: 14px !important;
+      }
+
+    }
+
+    /* ── SIDEBAR ─────────────────────────────────── */
+    .sidebar {
+      background: var(–sidebar-bg);
+      color: var(–sidebar-text);
+      padding: 44px 24px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sidebar::before {
+      content: ‘’;
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(34, 211, 238, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .sidebar::after {
+      content: ‘’;
+      position: absolute;
+      bottom: 60px;
+      right: -60px;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .profile-block {
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .avatar-ring {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 2px solid var(–sidebar-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avatar-ring::after {
+      content: ‘’;
+      position: absolute;
+      inset: 4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+
+    .avatar-initial {
+      font-family: ‘Noto Serif SC’, serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(–sidebar-accent);
+      position: relative;
+      z-index: 1;
+      letter-spacing: 2px;
+    }
+
+    .profile-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name-cn {
+      font-family: ‘Noto Serif SC’, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 4px;
+      margin-bottom: 4px;
+    }
+
+    .name-title {
+      font-size: 11px;
+      color: var(–sidebar-accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .sidebar-section {
+      margin-bottom: 24px;
+    }
+
+    .sidebar-section-title {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(–sidebar-accent);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 11.5px;
+      color: var(–sidebar-muted);
+      line-height: 1.5;
+    }
+
+    .contact-icon {
+      width: 14px;
+      flex-shrink: 0;
+      color: var(–sidebar-accent);
+      margin-top: 1px;
+      font-style: normal;
+      font-size: 12px;
+    }
+
+    .contact-val {
+      color: var(–sidebar-text);
+      font-size: 11.5px;
+    }
+
+    /* Location proximity highlight */
+    .location-highlight {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      background: rgba(34, 211, 238, 0.07);
+      border: 1px solid rgba(34, 211, 238, 0.18);
+      border-left: 2px solid var(–sidebar-accent);
+      border-radius: 4px;
+      padding: 7px 10px;
+      margin: 4px 0 10px;
+    }
+
+    .loc-icon {
+      font-size: 13px;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+
+    .location-highlight-text {
+      font-size: 10.5px;
+      color: rgba(226, 232, 240, 0.75);
+      line-height: 1.55;
+    }
+
+    .location-highlight-text strong {
+      color: #22d3ee;
+      font-weight: 600;
+    }
+
+    .skill-group {
+      margin-bottom: 13px;
+    }
+
+    .skill-group-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(–sidebar-muted);
+      margin-bottom: 6px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .skill-tag {
+      font-size: 10px;
+      padding: 3px 7px;
+      border-radius: 3px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+
+    .tag-primary {
+      background: rgba(34, 211, 238, 0.15);
+      color: var(–sidebar-accent);
+      border: 1px solid rgba(34, 211, 238, 0.25);
+    }
+
+    .tag-secondary {
+      background: rgba(148, 163, 184, 0.1);
+      color: var(–sidebar-muted);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .tag-gold {
+      background: rgba(201, 168, 76, 0.12);
+      color: #e0b95a;
+      border: 1px solid rgba(201, 168, 76, 0.2);
+    }
+
+    .edu-item {
+      margin-bottom: 10px;
+    }
+
+    .edu-school {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(–sidebar-text);
+      margin-bottom: 2px;
+    }
+
+    .edu-major {
+      font-size: 10.5px;
+      color: var(–sidebar-muted);
+      margin-bottom: 1px;
+    }
+
+    .edu-year {
+      font-size: 10px;
+      color: rgba(34, 211, 238, 0.7);
+    }
+
+    /* ── MAIN ─────────────────────────────────────── */
+    .main {
+      padding: 44px 32px 36px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .main-header {
+      margin-bottom: 22px;
+      padding-bottom: 18px;
+      border-bottom: 1.5px solid var(–rule);
+      position: relative;
+    }
+
+    .main-header::after {
+      content: ‘’;
+      position: absolute;
+      bottom: -1.5px;
+      left: 0;
+      width: 48px;
+      height: 3px;
+      background: var(–accent);
+      border-radius: 2px;
+    }
+
+    .target-role {
+      font-family: ‘Crimson Pro’, serif;
+      font-size: 28px;
+      font-weight: 300;
+      color: var(–ink);
+      letter-spacing: 1px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .target-role em {
+      font-style: italic;
+      color: var(–accent);
+      font-weight: 400;
+    }
+
+    .summary {
+      font-size: 11.5px;
+      color: var(–ink-light);
+      line-height: 1.8;
+    }
+
+    .summary strong {
+      color: var(–accent);
+      font-weight: 600;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: ‘Noto Serif SC’, serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(–ink);
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(–rule), transparent);
+    }
+
+    .section-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(–accent);
+      flex-shrink: 0;
+    }
+
+    .exp-item {
+      margin-bottom: 16px;
+      padding-left: 14px;
+      border-left: 2px solid var(–rule);
+      position: relative;
+    }
+
+    .exp-item::before {
+      content: ‘’;
+      position: absolute;
+      left: -5px;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(–accent);
+      border: 2px solid var(–white);
+      box-shadow: 0 0 0 1px var(–accent);
+    }
+
+    .exp-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3px;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .exp-company {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(–ink);
+      font-family: ‘Noto Serif SC’, serif;
+    }
+
+    .exp-period {
+      font-size: 10.5px;
+      white-space: nowrap;
+      background: var(–accent-pale);
+      padding: 2px 7px;
+      border-radius: 10px;
+      color: var(–accent);
+      font-weight: 500;
+    }
+
+    .exp-role {
+      font-size: 11px;
+      color: var(–accent);
+      font-weight: 500;
+      margin-bottom: 7px;
+      letter-spacing: 0.5px;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .exp-bullets li {
+      font-size: 11.5px;
+      color: var(–ink-light);
+      line-height: 1.65;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: ‘›’;
+      position: absolute;
+      left: 0;
+      color: var(–accent-light);
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .exp-bullets li strong {
+      color: var(–ink);
+      font-weight: 600;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .proj-card {
+      border: 1px solid var(–rule);
+      border-radius: 6px;
+      padding: 12px 14px;
+      background: var(–bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proj-card::before {
+      content: ‘’;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(–accent);
+    }
+
+    .proj-card.highlight::before {
+      background: linear-gradient(to right, var(–accent), var(–gold));
+    }
+
+    .proj-name {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(–ink);
+      margin-bottom: 4px;
+      font-family: ‘Noto Serif SC’, serif;
+    }
+
+    .proj-type {
+      display: inline-block;
+      font-size: 9px;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: var(–accent-pale);
+      color: var(–accent);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .proj-desc {
+      font-size: 10.5px;
+      color: var(–ink-light);
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .proj-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .proj-tech-tag {
+      font-size: 9.5px;
+      padding: 1px 5px;
+      border-radius: 2px;
+      background: rgba(13, 110, 110, 0.07);
+      color: var(–accent);
+      font-weight: 500;
+      border: 1px solid rgba(13, 110, 110, 0.12);
+    }
+
+    .achieve-box {
+      background: linear-gradient(135deg, var(–gold-pale) 0%, #fefefe 100%);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-left: 3px solid var(–gold);
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+    }
+
+    .achieve-box-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #8b6914;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .achieve-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .achieve-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 11px;
+      color: var(–ink-light);
+      line-height: 1.55;
+    }
+
+    .achieve-num {
+      font-weight: 700;
+      color: var(–accent);
+      white-space: nowrap;
+      font-family: ‘Crimson Pro’, serif;
+      font-size: 13px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        width: 210mm;
+        min-height: 297mm;
+        grid-template-columns: 68mm 1fr;
+      }
+
+      html {
+        font-size: 13px;
+      }
+    }
+  </style>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #1a1a2e;
+      --ink-light: #3d3d5c;
+      --ink-muted: #7a7a9a;
+      --accent: #0d6e6e;
+      --accent-light: #0fa8a8;
+      --accent-pale: #e0f4f4;
+      --gold: #c9a84c;
+      --gold-pale: #fdf6e3;
+      --rule: #d4d4e8;
+      --bg: #fafaf8;
+      --white: #ffffff;
+      --sidebar-bg: #111827;
+      --sidebar-text: #e2e8f0;
+      --sidebar-muted: #94a3b8;
+      --sidebar-accent: #22d3ee;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    html {
+      font-size: 14px;
+      background: #e8e8e0;
+    }
+
+    body {
+      font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      color: var(--ink);
+      background: #e8e8e0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .page {
+      background: var(--white);
+    }
+
+    @media (max-width: 900px) and (min-width: 601px) {
+      html {
+        font-size: 12px;
+      }
+
+      body {
+        padding: 16px 8px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      html {
+        font-size: 14px;
+      }
+
+      body {
+        padding: 0;
+        background: var(--sidebar-bg);
+      }
+
+      .page {
+        width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        box-shadow: none;
+      }
+
+      .sidebar {
+        padding: 28px 20px 24px !important;
+      }
+
+      .profile-block {
+        display: flex !important;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px !important;
+      }
+
+      .avatar-ring {
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 0 !important;
+        flex-shrink: 0;
+      }
+
+      .avatar-initial {
+        font-size: 22px !important;
+      }
+
+      .name-cn {
+        font-size: 20px !important;
+        letter-spacing: 3px !important;
+      }
+
+      .sidebar-skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+      }
+
+      .skill-tag {
+        font-size: 12px !important;
+        padding: 4px 8px !important;
+      }
+
+      .main {
+        padding: 24px 18px 40px !important;
+        background: var(--white);
+      }
+
+      .target-role {
+        font-size: 24px !important;
+      }
+
+      .summary {
+        font-size: 12px !important;
+      }
+
+      .exp-meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .exp-period {
+        align-self: flex-start;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .achieve-item {
+        font-size: 12px !important;
+      }
+
+      .achieve-num {
+        font-size: 14px !important;
+      }
+    }
+
+    .sidebar {
+      background: var(--sidebar-bg);
+      color: var(--sidebar-text);
+    }
+
+    .sidebar::before,
+    .sidebar::after {
+      content: '';
+    }
+
+    .avatar-ring {
+      border: 2px solid var(--sidebar-accent);
+    }
+
+    .avatar-initial {
+      color: var(--sidebar-accent);
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .name-cn {
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .name-title {
+      color: var(--sidebar-accent);
+    }
+
+    .sidebar-section-title {
+      color: var(--sidebar-accent);
+    }
+
+    .contact-icon {
+      color: var(--sidebar-accent);
+    }
+
+    .contact-val {
+      color: var(--sidebar-text);
+    }
+
+    .location-highlight {
+      border-left: 2px solid var(--sidebar-accent);
+    }
+
+    .skill-group-label {
+      color: var(--sidebar-muted);
+    }
+
+    .tag-primary {
+      color: var(--sidebar-accent);
+    }
+
+    .main-header {
+      border-bottom: 1.5px solid var(--rule);
+    }
+
+    .main-header::after {
+      content: '';
+      background: var(--accent);
+    }
+
+    .target-role {
+      color: var(--ink);
+      font-family: 'Crimson Pro', serif;
+    }
+
+    .target-role em {
+      color: var(--accent);
+    }
+
+    .summary {
+      color: var(--ink-light);
+    }
+
+    .section-title {
+      color: var(--ink);
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .section-line {
+      background: linear-gradient(to right, var(--rule), transparent);
+    }
+
+    .section-dot {
+      background: var(--accent);
+    }
+
+    .exp-item {
+      border-left: 2px solid var(--rule);
+    }
+
+    .exp-item::before {
+      content: '';
+      background: var(--accent);
+      border: 2px solid var(--white);
+      box-shadow: 0 0 0 1px var(--accent);
+    }
+
+    .exp-company {
+      color: var(--ink);
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .exp-period {
+      background: var(--accent-pale);
+      color: var(--accent);
+    }
+
+    .exp-role {
+      color: var(--accent);
+    }
+
+    .exp-bullets li {
+      color: var(--ink-light);
+    }
+
+    .exp-bullets li::before {
+      content: '›';
+      color: var(--accent-light);
+    }
+
+    .exp-bullets li strong {
+      color: var(--ink);
+    }
+
+    .project-grid {
+      gap: 10px;
+    }
+
+    .proj-card {
+      border: 1px solid var(--rule);
+      background: var(--bg);
+    }
+
+    .proj-card::before {
+      content: '';
+      background: var(--accent);
+    }
+
+    .proj-card.highlight::before {
+      background: linear-gradient(to right, var(--accent), var(--gold));
+    }
+
+    .proj-name {
+      color: var(--ink);
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .proj-type {
+      background: var(--accent-pale);
+      color: var(--accent);
+    }
+
+    .proj-tech-tag {
+      color: var(--accent);
+    }
+
+    .achieve-box {
+      background: linear-gradient(135deg, var(--gold-pale) 0%, #fefefe 100%);
+      border-left: 3px solid var(--gold);
+    }
+
+    .achieve-item {
+      color: var(--ink-light);
+    }
+
+    .achieve-num {
+      color: var(--accent);
+      font-family: 'Crimson Pro', serif;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        width: 210mm;
+        min-height: 297mm;
+        grid-template-columns: 68mm 1fr;
+      }
+
+      html {
+        font-size: 13px;
+      }
+    }
+  </style>
 
 </head>
+
 <body>
-<div class="page">
+  <div class="page">
 
-  <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
 
-  <aside class="sidebar">
-    <div class="profile-block">
-      <div class="avatar-ring">
-        <span class="avatar-initial">倩</span>
+    <aside class="sidebar">
+      <div class="profile-block">
+        <div class="avatar-ring">
+          <span class="avatar-initial">倩</span>
+        </div>
+        <div class="profile-text">
+          <div class="name-cn">张&ensp;倩</div>
+          <div class="name-title">Frontend Engineer</div>
+        </div>
       </div>
-      <div class="profile-text">
-        <div class="name-cn">张&ensp;倩</div>
-        <div class="name-title">Frontend Engineer</div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">联系方式</div>
+        <div class="contact-item">
+          <i class="contact-icon">📱</i>
+          <span class="contact-val">138-1406-6642</span>
+        </div>
+        <div class="contact-item">
+          <i class="contact-icon">✉</i>
+          <span class="contact-val">sakuradramon@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="contact-icon">📍</i>
+          <span class="contact-val">南京市江宁区大学城</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="contact-icon">🎓</i>
+          <span class="contact-val">本科 · 计算机相关</span>
+        </div>
+        <div class="contact-item">
+          <i class="contact-icon">⏱</i>
+          <span class="contact-val">工作年限 9年+</span>
+        </div>
       </div>
-    </div>
+      <!-- End of main content -->
 
-```
-<div class="sidebar-section">
-  <div class="sidebar-section-title">联系方式</div>
-  <div class="contact-item">
-    <i class="contact-icon">📱</i>
-    <span class="contact-val">138-1406-6642</span>
-  </div>
-  <div class="contact-item">
-    <i class="contact-icon">✉</i>
-    <span class="contact-val">sakuradramon@gmail.com</span>
-  </div>
-  <div class="contact-item">
-    <i class="contact-icon">📍</i>
-    <span class="contact-val">南京市江宁区大学城</span>
-  </div>
 
-  <div class="contact-item">
-    <i class="contact-icon">🎓</i>
-    <span class="contact-val">本科 · 计算机相关</span>
-  </div>
-  <div class="contact-item">
-    <i class="contact-icon">⏱</i>
-    <span class="contact-val">工作年限 9年+</span>
-  </div>
-</div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">核心技术栈</div>
 
-<div class="sidebar-section">
-  <div class="sidebar-section-title">核心技术栈</div>
+        <div class="skill-group">
+          <div class="skill-group-label">框架 · 语言</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Vue 2/3</span>
+            <span class="skill-tag tag-primary">TypeScript</span>
+            <span class="skill-tag tag-primary">JavaScript</span>
+            <span class="skill-tag tag-secondary">Node.js</span>
+            <span class="skill-tag tag-secondary">Python</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">框架 · 语言</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-primary">Vue 2/3</span>
-      <span class="skill-tag tag-primary">TypeScript</span>
-      <span class="skill-tag tag-primary">JavaScript</span>
-      <span class="skill-tag tag-secondary">Node.js</span>
-      <span class="skill-tag tag-secondary">Python</span>
-    </div>
-  </div>
+        <div class="skill-group">
+          <div class="skill-group-label">跨端 · 小程序</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">微信小程序</span>
+            <span class="skill-tag tag-primary">UniApp</span>
+            <span class="skill-tag tag-secondary">H5 Hybrid</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">跨端 · 小程序</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-primary">微信小程序</span>
-      <span class="skill-tag tag-primary">UniApp</span>
-      <span class="skill-tag tag-secondary">H5 Hybrid</span>
-    </div>
-  </div>
+        <div class="skill-group">
+          <div class="skill-group-label">工程化 · 构建</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Webpack</span>
+            <span class="skill-tag tag-primary">Vite</span>
+            <span class="skill-tag tag-gold">Monorepo</span>
+            <span class="skill-tag tag-gold">Turborepo</span>
+            <span class="skill-tag tag-secondary">CI/CD自动化集成</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">工程化 · 构建</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-primary">Webpack</span>
-      <span class="skill-tag tag-primary">Vite</span>
-      <span class="skill-tag tag-gold">Monorepo</span>
-      <span class="skill-tag tag-gold">Turborepo</span>
-      <span class="skill-tag tag-secondary">CI/CD自动化集成</span>
-    </div>
-  </div>
+        <div class="skill-group">
+          <div class="skill-group-label">UI 组件库</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-secondary">ElementUI</span>
+            <span class="skill-tag tag-secondary">AntDesign</span>
+            <span class="skill-tag tag-secondary">Vant</span>
+            <span class="skill-tag tag-secondary">iViewUI</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">UI 组件库</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-secondary">ElementUI</span>
-      <span class="skill-tag tag-secondary">AntDesign</span>
-      <span class="skill-tag tag-secondary">Vant</span>
-      <span class="skill-tag tag-secondary">iViewUI</span>
-    </div>
-  </div>
+        <div class="skill-group">
+          <div class="skill-group-label">数据可视化</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-secondary">ECharts</span>
+            <span class="skill-tag tag-secondary">AntV G6</span>
+            <span class="skill-tag tag-secondary">AntV L7</span>
+            <span class="skill-tag tag-secondary">AntV S2</span>
+            <span class="skill-tag tag-secondary">百度地图API</span>
+            <span class="skill-tag tag-secondary">vxeTable</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">数据可视化</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-secondary">ECharts</span>
-      <span class="skill-tag tag-secondary">AntV G6</span>
-      <span class="skill-tag tag-secondary">AntV L7</span>
-      <span class="skill-tag tag-secondary">AntV S2</span>
-      <span class="skill-tag tag-secondary">百度地图API</span>
-      <span class="skill-tag tag-secondary">vxeTable</span>
-    </div>
-  </div>
+        <div class="skill-group">
+          <div class="skill-group-label">DevOps · 协作</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-secondary">Jenkins CI/CD</span>
+            <span class="skill-tag tag-secondary">Nginx</span>
+            <span class="skill-tag tag-secondary">Git</span>
+          </div>
+        </div>
 
-  <div class="skill-group">
-    <div class="skill-group-label">DevOps · 协作</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-secondary">Jenkins CI/CD</span>
-      <span class="skill-tag tag-secondary">Nginx</span>
-      <span class="skill-tag tag-secondary">Git</span>
-    </div>
-  </div>
-
-  <div class="skill-group">
-    <div class="skill-group-label">AI 辅助开发</div>
-    <div class="skill-tags">
-      <span class="skill-tag tag-gold">Cursor</span>
-      <span class="skill-tag tag-gold">Trae</span>
-      <span class="skill-tag tag-gold">提示词工程</span>
-    </div>
-  </div>
-</div>
-
-<div class="sidebar-section">
-  <div class="sidebar-section-title">教育 · 证书</div>
-  <div class="edu-item">
-    <div class="edu-school">北京邮电大学世纪学院</div>
-    <div class="edu-major">数字媒体技术（移动网络方向）</div>
-    <div class="edu-year">2011.08 — 2015.06 · 本科</div>
-  </div>
-  <div class="edu-item" style="margin-top:10px">
-    <div class="edu-school">PMP · 项目管理专业人士</div>
-    <div class="edu-major">Project Management Professional</div>
-    <div class="edu-year">2023.05 · PMI 认证</div>
-  </div>
-</div>
-```
-
-  </aside>
-
-  <!-- MAIN -->
-
-  <main class="main">
-
-```
-<div class="main-header">
-  <div class="target-role">前端技术专家<br><em>Senior Frontend Engineer</em></div>
-  <p class="summary">
-    9年前端开发，方向是企业级 B 端系统与跨端小程序。现任职于大型集团技术平台部，负责多套系统的架构规划与落地，主导过 Monorepo 工程整合接口层建设及小程序性能治理。近一年在团队内推行 AI 辅助开发工作流，负责工程上下文设计、代码规范把关与工具链落地，关注 AI 在可控环境下的工程化应用。持 PMP 证书，具备项目管理视角。
-  </p>
-</div>
-
-<!-- Work Experience -->
-<div class="section">
-  <div class="section-header">
-    <div class="section-dot"></div>
-    <div class="section-title">工作经历</div>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-meta">
-      <span class="exp-company">南京景枫集团 · 技术平台部</span>
-      <span class="exp-period">2020.08 — 至今 · 约5年</span>
-    </div>
-    <div class="exp-role">前端技术专家（现任）</div>
-    <ul class="exp-bullets">
-      <li>负责集团旗下<strong>运营管理平台、会员管理平台、小程序运营后台</strong>三大 B 端系统的前端技术规划与核心开发，业务模块覆盖 IoT 设备监控、智慧停车、商户管理、积分/权益体系等。</li>
-      <li>主导 <strong>Monorepo 工程整合</strong>（pnpm workspaces + Turborepo），将 PC 端与 H5 端两套独立仓库合并，统一收敛 API 接口至 <code>packages/apis</code>，消除多端逻辑不一致风险，接口维护成本降低。</li>
-      <li>推动 <strong>TypeScript 接口层建设</strong>：为 APIs 包添加完整 Request/Response 类型模型，实现 IDE 自动补全，编译期拦截调用错误，显著提升团队开发体验。</li>
-      <li>主导 toC 微信小程序开发（访客管理、停车缴费、线上商城、服务预约等 10+ 模块），UniApp + Vue3 多端输出；同时独立开发 toB 小程序（故障报修、设备巡检、商户管理等）。</li>
-      <li>主导会员小程序<strong>全面性能优化</strong>：引入请求防抖（300ms）与 主题缓存机制减少重复网络请求；封装动态组件包装器统一子组件切换接口，配合图片懒加载与占位图提升首屏体验；修复内存泄露（事件监听/v-for key 规范）并防止越界访问，渲染流畅度显著改善。</li>
-      <li>运营管理平台设备监控模块引入 <strong>AntV 图形技术栈</strong>：G6 实现告警拓扑图，L7 / L7-Draw / L7-Maps 构建地理空间场景，S2 支撑多维数据透视，承接复杂 IoT 监控可视化需求。</li>
-      <li>主导团队 <strong>AI 辅助开发工作流</strong>落地：负责工程上下文设计与提示词规范，建立代码复审机制保障输出质量，推动 Cursor / Trae 工具链在项目中的标准化使用，团队交付效率明显提升。</li>
-      <li>规划微前端演进路径：建议将巨石应用按业务域拆分为独立子应用，已输出可行性方案文档。</li>
-    </ul>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-meta">
-      <span class="exp-company">南京网兜信息技术有限公司</span>
-      <span class="exp-period">2018.09 — 2020.06 · 2年</span>
-    </div>
-    <div class="exp-role">财务 SAAS 研发部 · 前端负责人</div>
-    <ul class="exp-bullets">
-      <li>带领前端小组完成财务 SAAS 平台（租户端/用户端/运营端）开发，覆盖总账管理、凭证录入、现金流量分析等核心模块；负责前端任务分配与进度把控。</li>
-      <li>输出模块级核心代码逻辑文档与业务流程图，建立团队知识沉淀体系。</li>
-      <li>技术栈：Vue 全家桶 + Axios + iViewUI + vxeTable + Webpack + Jenkins。</li>
-    </ul>
-  </div>
-
-  <div class="exp-item" style="opacity:0.75">
-    <div class="exp-meta">
-      <span class="exp-company">早期前端工程师经历</span>
-      <span class="exp-period">2015.07 — 2018.08</span>
-    </div>
-    <div class="exp-role">脉融信息技术 · 无忧俱乐部信息科技 · 巨匠互联信息技术</div>
-    <ul class="exp-bullets">
-      <li>先后在三家公司担任前端工程师，参与 Web 应用及 B 端系统开发，奠定 HTML / CSS / JavaScript 与 Vue 工程化基础。</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Projects -->
-<div class="section">
-  <div class="section-header">
-    <div class="section-dot"></div>
-    <div class="section-title">代表性项目</div>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="project-grid">
-    <div class="proj-card highlight">
-      <div class="proj-name">前端 Monorepo 工程整合</div>
-      <span class="proj-type">架构设计</span>
-      <p class="proj-desc">将 PC 端与 H5 端两套独立仓库合并，抽离 packages/apis、packages/utils、packages/eslint-config，统一 700+ 接口调用，规划微前端演进路径。</p>
-      <div class="proj-tech">
-        <span class="proj-tech-tag">pnpm workspaces</span>
-        <span class="proj-tech-tag">Turborepo</span>
-        <span class="proj-tech-tag">TypeScript</span>
-        <span class="proj-tech-tag">Monorepo</span>
+        <div class="skill-group">
+          <div class="skill-group-label">AI 辅助开发</div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-gold">Cursor</span>
+            <span class="skill-tag tag-gold">Trae</span>
+            <span class="skill-tag tag-gold">提示词工程</span>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="proj-card">
-      <div class="proj-name">景枫集团运营管理平台</div>
-      <span class="proj-type">B端 · Web</span>
-      <p class="proj-desc">IoT 设备监控（G6 告警拓扑图、L7 地理场景图、S2 数据透视）、设施运维、智慧停车、能耗管理等多模块复杂 B 端系统，支持大数据渲染与实时推送。</p>
-      <div class="proj-tech">
-        <span class="proj-tech-tag">Vue3</span>
-        <span class="proj-tech-tag">AntV G6</span>
-        <span class="proj-tech-tag">AntV L7</span>
-        <span class="proj-tech-tag">AntV S2</span>
-        <span class="proj-tech-tag">ECharts</span>
-        <span class="proj-tech-tag">vxeTable</span>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">教育 · 证书</div>
+        <div class="edu-item">
+          <div class="edu-school">北京邮电大学世纪学院</div>
+          <div class="edu-major">数字媒体技术（移动网络方向）</div>
+          <div class="edu-year">2011.08 — 2015.06 · 本科</div>
+        </div>
+        <div class="edu-item" style="margin-top:10px">
+          <div class="edu-school">PMP · 项目管理专业人士</div>
+          <div class="edu-major">Project Management Professional</div>
+          <div class="edu-year">2023.05 · PMI 认证</div>
+        </div>
       </div>
-    </div>
 
-    <div class="proj-card">
-      <div class="proj-name">toC 微信小程序（微信内搜索“景枫会员+”、“苏州地铁汇星连”）</div>
-      <span class="proj-type">跨端 · 小程序</span>
-      <p class="proj-desc">访客管理、停车缴费、线上商城、服务预约等 10+ 模块，UniApp 多端输出。主导性能优化：请求防抖与缓存、动态组件封装、图片懒加载，修复内存泄露。</p>
-      <div class="proj-tech">
-        <span class="proj-tech-tag">UniApp</span>
-        <span class="proj-tech-tag">Vue3</span>
-        <span class="proj-tech-tag">微信小程序</span>
-        <span class="proj-tech-tag">Vant</span>
-      </div>
-    </div>
+    </aside>
 
-    <div class="proj-card">
-      <div class="proj-name">景枫会员管理平台</div>
-      <span class="proj-type">B端 · Web</span>
-      <p class="proj-desc">覆盖会员体系、权益套餐、积分管理、储值卡、优惠券、营销中心、数据报表等全链路会员运营功能。</p>
-      <div class="proj-tech">
-        <span class="proj-tech-tag">Vue3</span>
-        <span class="proj-tech-tag">ElementUI</span>
-        <span class="proj-tech-tag">ECharts</span>
+    <!-- MAIN -->
+
+    <main class="main">
+
+      <div class="main-header">
+        <div class="target-role">前端技术专家<br><em>Senior Frontend Engineer</em></div>
+        <p class="summary">
+          9年前端开发，方向是企业级 B 端系统与跨端小程序。现任职于大型集团技术平台部，负责多套系统的架构规划与落地，主导过 Monorepo 工程整合接口层建设及小程序性能治理。近一年在团队内推行 AI
+          辅助开发工作流，负责工程上下文设计、代码规范把关与工具链落地，关注 AI 在可控环境下的工程化应用。持 PMP 证书，具备项目管理视角。
+        </p>
       </div>
-    </div>
+
+      <!-- Work Experience -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-dot"></div>
+          <div class="section-title">工作经历</div>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-company">南京景枫集团 · 技术平台部</span>
+            <span class="exp-period">2020.08 — 至今 · 约5年</span>
+          </div>
+          <div class="exp-role">前端技术专家（现任）</div>
+          <ul class="exp-bullets">
+            <li>负责集团旗下<strong>运营管理平台、会员管理平台、小程序运营后台</strong>三大 B 端系统的前端技术规划与核心开发，业务模块覆盖 IoT 设备监控、智慧停车、商户管理、积分/权益体系等。
+            </li>
+            <li>主导 <strong>Monorepo 工程整合</strong>（pnpm workspaces + Turborepo），将 PC 端与 H5 端两套独立仓库合并，统一收敛 API 接口至
+              <code>packages/apis</code>，消除多端逻辑不一致风险，接口维护成本降低。
+            </li>
+            <li>推动 <strong>TypeScript 接口层建设</strong>：为 APIs 包添加完整 Request/Response 类型模型，实现 IDE
+              自动补全，编译期拦截调用错误，显著提升团队开发体验。
+            </li>
+            <li>主导 toC 微信小程序开发（访客管理、停车缴费、线上商城、服务预约等 10+ 模块），UniApp + Vue3 多端输出；同时独立开发 toB 小程序（故障报修、设备巡检、商户管理等）。</li>
+            <li>主导会员小程序<strong>全面性能优化</strong>：引入请求防抖（300ms）与
+              主题缓存机制减少重复网络请求；封装动态组件包装器统一子组件切换接口，配合图片懒加载与占位图提升首屏体验；修复内存泄露（事件监听/v-for key 规范）并防止越界访问，渲染流畅度显著改善。</li>
+            <li>运营管理平台设备监控模块引入 <strong>AntV 图形技术栈</strong>：G6 实现告警拓扑图，L7 / L7-Draw / L7-Maps 构建地理空间场景，S2 支撑多维数据透视，承接复杂
+              IoT
+              监控可视化需求。</li>
+            <li>主导团队 <strong>AI 辅助开发工作流</strong>落地：负责工程上下文设计与提示词规范，建立代码复审机制保障输出质量，推动 Cursor / Trae
+              工具链在项目中的标准化使用，团队交付效率明显提升。
+            </li>
+            <li>规划微前端演进路径：建议将巨石应用按业务域拆分为独立子应用，已输出可行性方案文档。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-company">南京网兜信息技术有限公司</span>
+            <span class="exp-period">2018.09 — 2020.06 · 2年</span>
+          </div>
+          <div class="exp-role">财务 SAAS 研发部 · 前端负责人</div>
+          <ul class="exp-bullets">
+            <li>带领前端小组完成财务 SAAS 平台（租户端/用户端/运营端）开发，覆盖总账管理、凭证录入、现金流量分析等核心模块；负责前端任务分配与进度把控。</li>
+            <li>输出模块级核心代码逻辑文档与业务流程图，建立团队知识沉淀体系。</li>
+            <li>技术栈：Vue 全家桶 + Axios + iViewUI + vxeTable + Webpack + Jenkins。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item" style="opacity:0.75">
+          <div class="exp-meta">
+            <span class="exp-company">早期前端工程师经历</span>
+            <span class="exp-period">2015.07 — 2018.08</span>
+          </div>
+          <div class="exp-role">脉融信息技术 · 无忧俱乐部信息科技 · 巨匠互联信息技术</div>
+          <ul class="exp-bullets">
+            <li>先后在三家公司担任前端工程师，参与 Web 应用及 B 端系统开发，奠定 HTML / CSS / JavaScript 与 Vue 工程化基础。</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section-header">
+          <div class="section-dot"></div>
+          <div class="section-title">代表性项目</div>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="project-grid">
+          <div class="proj-card highlight">
+            <div class="proj-name">前端 Monorepo 工程整合</div>
+            <span class="proj-type">架构设计</span>
+            <p class="proj-desc">将 PC 端与 H5 端两套独立仓库合并，抽离 packages/apis、packages/utils、packages/eslint-config，统一 700+
+              接口调用，规划微前端演进路径。</p>
+            <div class="proj-tech">
+              <span class="proj-tech-tag">pnpm workspaces</span>
+              <span class="proj-tech-tag">Turborepo</span>
+              <span class="proj-tech-tag">TypeScript</span>
+              <span class="proj-tech-tag">Monorepo</span>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-name">景枫集团运营管理平台</div>
+            <span class="proj-type">B端 · Web</span>
+            <p class="proj-desc">IoT 设备监控（G6 告警拓扑图、L7 地理场景图、S2 数据透视）、设施运维、智慧停车、能耗管理等多模块复杂 B 端系统，支持大数据渲染与实时推送。</p>
+            <div class="proj-tech">
+              <span class="proj-tech-tag">Vue3</span>
+              <span class="proj-tech-tag">AntV G6</span>
+              <span class="proj-tech-tag">AntV L7</span>
+              <span class="proj-tech-tag">AntV S2</span>
+              <span class="proj-tech-tag">ECharts</span>
+              <span class="proj-tech-tag">vxeTable</span>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-name">toC 微信小程序（微信内搜索“景枫会员+”、“苏州地铁汇星连”）</div>
+            <span class="proj-type">跨端 · 小程序</span>
+            <p class="proj-desc">访客管理、停车缴费、线上商城、服务预约等 10+ 模块，UniApp 多端输出。主导性能优化：请求防抖与缓存、动态组件封装、图片懒加载，修复内存泄露。</p>
+            <div class="proj-tech">
+              <span class="proj-tech-tag">UniApp</span>
+              <span class="proj-tech-tag">Vue3</span>
+              <span class="proj-tech-tag">微信小程序</span>
+              <span class="proj-tech-tag">Vant</span>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-name">景枫会员管理平台</div>
+            <span class="proj-type">B端 · Web</span>
+            <p class="proj-desc">覆盖会员体系、权益套餐、积分管理、储值卡、优惠券、营销中心、数据报表等全链路会员运营功能。</p>
+            <div class="proj-tech">
+              <span class="proj-tech-tag">Vue3</span>
+              <span class="proj-tech-tag">ElementUI</span>
+              <span class="proj-tech-tag">ECharts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
   </div>
-</div>
+
+</body>
+
+</html>
