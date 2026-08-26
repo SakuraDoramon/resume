@@ -30,8 +30,18 @@ Al+研发模式建设；
 
 _**Agent (default)**_
 
+<think><details><summary>Thought Process</summary>
+用户希望根据正大天晴的前端招聘详情更新简历中的 HTML 内容。该职位要求 Vue3、TypeScript、JavaScript 及临床数字化经验，同时关注 AI Coding 工具使用和 B 端系统开发背景。我将结合用户此前在 Desktop 目录下的项目文档，调整简历以匹配这些岗位要求。
+</details></think>
+
+_**Agent (default)**_
+
+先看你现有的简历和 Desktop 里的项目/文档，再按正大天晴这个临床数字化前端岗来改 `resume/index.html`。
+
+_**Agent (default)**_
+
 <tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
-<summary>Tool use: **read_file_v2** • Read file: </summary>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/resume/index.html</summary>
 
 </details></tool-use>
 
@@ -42,20 +52,1591 @@ _**Agent (default)**_
 ```bash
 ls -la /Users/sakura/Desktop && ls -la /Users/sakura/Desktop/mine/resume/
 ```
+
+```
+total 32
+drwx------@  7 sakura  staff    224 Jun 24 16:46 .
+drwxr-xr-x+ 99 sakura  staff   3168 Aug 25 10:00 ..
+-rw-r--r--@  1 sakura  staff  14340 Aug 25 15:45 .DS_Store
+-rw-r--r--   1 sakura  staff      0 Apr 21  2025 .localized
+drwxr-xr-x  16 sakura  staff    512 Jun 13 16:14 Downloads
+drwxr-xr-x@  9 sakura  staff    288 Jun 25 17:50 mine
+drwxr-xr-x@ 34 sakura  staff   1088 Aug 19 10:42 workspace
+total 232
+drwxr-xr-x@  9 sakura  staff    288 Aug 25 15:47 .
+drwxr-xr-x@  9 sakura  staff    288 Jun 25 17:50 ..
+-rw-r--r--@  1 sakura  staff    110 Aug 25 15:45 .cursorindexingignore
+drwxr-xr-x@ 17 sakura  staff    544 Aug 25 15:45 .git
+drwxr-xr-x@  5 sakura  staff    160 Aug 25 15:45 .specstory
+-rw-r--r--@  1 sakura  staff      8 Mar 26 14:47 README.md
+-rw-r--r--@  1 sakura  staff  34754 Aug 25 15:47 index copy 2.html
+-rw-r--r--@  1 sakura  staff  34794 Mar 26 15:10 index copy.html
+-rw-r--r--@  1 sakura  staff  34754 Aug 25 15:45 index.html
+
+```
 </details></tool-use>
 
 _**Agent (default)**_
 
 <tool-use data-tool-type="search" data-tool-name="glob_file_search"><details>
-<summary>Tool use: **glob_file_search** • Searched codebase "" • **0** results in **0** directories</summary>
+<summary>Tool use: **glob_file_search** • Searched codebase "" • **1536** results in **1** directory</summary>
 
-No results found
+Directory: **`/Users/sakura/Desktop`** (1536 files)
+
+| File |
+|------|
+| `mine/resume/index copy 2.html` |
+| `mine/resume/index.html` |
+| `mine/resume/index copy.html` |
+| `mine/resume/README.md` |
+| `workspace/gmp-applet-web/pages-shop/components/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-shop/components/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-shop/components/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-shop/components/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/gmp-applet-web/README.md` |
+| `workspace/kmp-child/public/mock-host.html` |
+| `workspace/kmp-child/README.md` |
+| `workspace/kmp-child/PROTOCOL.md` |
+| `workspace/gmp-applet-web/pages-park/invoice/invoice-detail.md` |
+| `workspace/gmp-applet-web/pages-checkin/components/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-checkin/components/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-checkin/components/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-checkin/components/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/gmp-applet-web/docs/配置中心接口加密.md` |
+| `workspace/gmp-applet-web/docs/前端加签流程说明-小程序.md` |
+| `workspace/gmp-applet-web/README_VOICE_RESEARCH.md` |
+| `workspace/gmp-applet-web/CLAUDE.md` |
+| `workspace/kmp-child/public/index.html` |
+| `workspace/bap-frontend/docs/test-reports/告警推送升级完整性测试报告.md` |
+| `workspace/bap-frontend/docs/test-plans/告警推送升级完整性测试计划.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-device-status-alarm-applet-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-device-repair-high-frequency-rule-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-alarm-push-escalation-api.md` |
+| `workspace/bap-frontend/docs/api-notes/bap-energe-electricity-platform-billing-api.md` |
+| `workspace/bap-frontend/docs/api-notes/README.md` |
+| `workspace/bap-frontend/apps/bap-web/visual-tests/alarm-escalation.html` |
+| `workspace/dp-web/prd/数据中台原型_v2.7.html` |
+| `workspace/agent-web/CLAUDE.md` |
+| `workspace/agent-web/AGENTS.md` |
+| `workspace/agent-web/AI_CODING_GUIDE.md` |
+| `workspace/agent-web/index.html` |
+| `workspace/agent-web/README.md` |
+| `workspace/agent-web/GEMINI.md` |
+| `workspace/agent-web/.github/copilot-instructions.md` |
+| `workspace/kmp-web/src/views/Integral/manage/积分预支可交互原型V1.2.html` |
+| `workspace/kmp-web/CLAUDE.md` |
+| `workspace/dp-web/prd/数据中台原型_v2.6.html` |
+| `workspace/kmp-web/public/index.html` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-maintenance-image-quality-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-device-repair-high-frequency-alarm-center-api.md` |
+| `workspace/bap-frontend/docs/superpowers/specs/2026-07-13-关联维修工单弹窗原型对齐设计.md` |
+| `workspace/bap-frontend/docs/superpowers/plans/2026-07-13-设备高频故障报警中心实施计划.md` |
+| `workspace/bap-frontend/docs/superpowers/plans/2026-07-13-关联维修工单弹窗原型对齐实施计划.md` |
+| `workspace/ai-frontend/docs/文档预览移动端适配说明.md` |
+| `workspace/ai-ragflow/README.md` |
+| `workspace/bap-applet/CLAUDE.md` |
+| `workspace/bap-frontend/docs/superpowers/specs/2026-07-13-BAP-11850评分条视觉调整设计.md` |
+| `workspace/bap-frontend/docs/superpowers/plans/2026-07-13-BAP-11850闭店检查交互计划.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/mixins/README.md` |
+| `workspace/dp-web/prd/数据中台原型_v2.4.html` |
+| `mine/ai-mode-demo/skills/drink-skill/SKILL.md` |
+| `mine/ai-mode-demo/README.md` |
+| `workspace/ai-ragflow/.specstory/history/2026-07-08_06-39-32Z-document-preview-enhancements.md` |
+| `workspace/bap-frontend/docs/api-notes/repair-work-order-reporter-api.md` |
+| `workspace/bap-frontend/docs/api-notes/online-pay-invoice-rule-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-maintenance-task-merge-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-maintenance-merge-rule-api.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-inspection-image-quality-api.md` |
+| `workspace/bap-frontend/docs/api-notes/auth-user-repair-work-order-accounts-api.md` |
+| `workspace/bap-frontend/apps/bap-web/src/views/businessManage/onlinePay/invoiceRule/reviewTask.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/views/baseModules/userVoice/opinionManage/opinionRecord/GMP-7172 AI舆情分析 — 前端联调接口文档(2).md` |
+| `workspace/ai-frontend/index.html` |
+| `workspace/ai-frontend/AGENTS.md` |
+| `workspace/ai-frontend/docs/交互卡片业务扩展记录.md` |
+| `mine/ai-frontend/index.html` |
+| `mine/ai-frontend/docs/交互卡片业务扩展记录.md` |
+| `mine/ai-frontend/AGENTS.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-24-repair-query-pagination-passthrough-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-24-repair-form-attachment-upload-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-24-repair-field-type-attachment-rename-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-24-fdfs-upload-api-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-10-fault-repair-place-clarification-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-09-fault-repair-flow-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-24-repair-query-pagination-passthrough.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-24-repair-form-attachment-upload.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-24-repair-field-type-attachment-rename.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-24-fdfs-upload-api.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-09-fault-repair-flow.md` |
+| `mine/ai-deer-flow/backend/docs/FILE_UPLOAD.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_QUERY_MCP_DEV_GUIDE.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_QUERY_MCP_CHANGE_REQUEST.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_QUERY_FRONTEND_PAGINATION_DETAIL.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_QUERY_FRONTEND_INTEGRATION.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_FRONTEND_API.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_FLOW.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_ATTACHMENT_UPLOAD_FRONTEND.md` |
+| `workspace/ai-frontend/public/errorPage.html` |
+| `mine/ai-frontend/public/errorPage.html` |
+| `workspace/gmp-frontend/previewMedia组件使用页面清单.md` |
+| `workspace/gmp-frontend/packages/apis/api/kmp/readme.md` |
+| `workspace/gmp-frontend/packages/apis/api/bap/readme.md` |
+| `workspace/gmp-frontend/packages/apis/README.md` |
+| `workspace/gmp-frontend/docs/missing-commits-R2604-to-R2606.txt` |
+| `workspace/gmp-frontend/apps/gmp-web/src/views/appCenter/shopApp/goodsManage/examineRecord/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/views/appCenter/lotteryApp/activityManage/test_changes.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/views/appCenter/distributionApp/distributionManagement/create.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/views/appCenter/distributionApp/distributionManagement/components/create-fields.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/commonTable/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/StatisticsCard/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/AtomComponents/TooltipSelect/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/AtomComponents/DoughnutChart/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/AtomComponents/ColumnChart/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/src/components/AtomComponents/BarChart/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/public/publish.readme.md` |
+| `workspace/gmp-frontend/apps/gmp-web/public/index.html` |
+| `workspace/gmp-frontend/apps/gmp-web/README.md` |
+| `workspace/gmp-frontend/apps/gmp-h5/public/index.html` |
+| `workspace/gmp-frontend/apps/gmp-h5/public/i0d0c0mjQE.txt` |
+| `workspace/gmp-frontend/apps/gmp-h5/public/errorPage.html` |
+| `workspace/gmp-frontend/apps/gmp-h5/public/appletAssets/gmp-applet-web/static/bap/README.md` |
+| `workspace/gmp-frontend/apps/gmp-h5/public/4pCRoUYIfc.txt` |
+| `workspace/gmp-frontend/apps/gmp-h5/docs/配置设计与初始化时序.md` |
+| `workspace/gmp-frontend/apps/gmp-h5/docs/运维交接说明.md` |
+| `workspace/gmp-frontend/apps/gmp-h5/docs/前端加签流程说明-H5.md` |
+| `workspace/gmp-frontend/apps/gmp-h5/README.md` |
+| `workspace/gmp-frontend/CLAUDE.md` |
+| `workspace/gmp-frontend/.cursor/skills/write-doc-comment.md` |
+| `workspace/gmp-frontend/.cursor/skills/vue-component-development.md` |
+| `workspace/gmp-frontend/.cursor/skills/refactor-code.md` |
+| `workspace/gmp-frontend/.cursor/skills/debug-error.md` |
+| `workspace/gmp-frontend/.cursor/skills/code-review-checklist.md` |
+| `workspace/gmp-frontend/.cursor/skills/add-api-interface.md` |
+| `workspace/gmp-frontend/.cursor/rules/README.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-18-auth-me-user-base-info-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-18-auth-me-user-base-info.md` |
+| `mine/ai-deer-flow/backend/docs/superpowers/specs/2026-06-17-wecom-authcode-login-design.md` |
+| `mine/ai-deer-flow/backend/docs/superpowers/plans/2026-06-17-wecom-authcode-login.md` |
+| `mine/ai-deer-flow/backend/docs/WECOM_LOGIN_FRONTEND_API.md` |
+| `mine/ai-deer-flow/backend/docs/AGENT_AUTH_API.md` |
+| `workspace/bap-frontend/docs/api-notes/bap-energe-ups-api.md` |
+| `mine/ai-deer-flow/.specstory/history/2026-06-17_02-08-25Z-streaming-data-display-module-overview.md` |
+| `workspace/ai-frontend/docs/streaming-display.md` |
+| `mine/ai-frontend/docs/streaming-display.md` |
+| `mine/ai-frontend/docs/项目设计简述.md` |
+| `workspace/ai-frontend/docs/项目设计简述.md` |
+| `mine/ai-frontend/docs/目录分层设计.md` |
+| `workspace/ai-frontend/docs/目录分层设计.md` |
+| `workspace/ai-frontend/mocks/sse/dev-report-stream.txt` |
+| `mine/ai-frontend/mocks/sse/dev-report-stream.txt` |
+| `mine/ai-deer-flow/frontend/docs/价值分析.md` |
+| `mine/ai-deer-flow/frontend/docs/工程对比分析.md` |
+| `mine/ai-deer-flow/frontend/docs/streaming-display.md` |
+| `mine/ai-deer-flow/.specstory/history/2026-06-17_02-08-25Z-流式数据展示模块的实现细节.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-16-repair-query-fields-array-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-15-repair-query-real-return-adaptation-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-15-repair-dynamic-form-depends-on-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-14-repair-place-clarification-snapshot-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-13-repair-ticket-query-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-13-repair-result-form-snapshot-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-13-repair-place-clarification-interrupt-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-13-repair-lifecycle-event-writeback-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-13-repair-interrupt-confirmation-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-10-sensitive-word-redaction-tools-scope-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-10-mcp-and-run-timeouts-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-08-summarization-hide-from-client-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-05-sensitive-word-redaction-middleware-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-04-frontend-login-password-md5-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-02-user-mcp-permissions-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-02-mcp-suggest-questions-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-01-wecom-agent-auth-binding-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-01-knowledge-base-grounding-interceptor-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-06-01-agent-auth-integration-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-26-run-events-request-params-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-21-wecom-deerflow-binding-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-18-chat-to-mcp-routing-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-16-repair-query-fields-array.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-15-repair-query-real-return-adaptation.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-15-repair-dynamic-form-depends-on.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-14-repair-ticket-query-detail.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-14-repair-place-clarification-snapshot.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-13-repair-ticket-query.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-13-repair-result-form-snapshot.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-13-repair-place-clarification-interrupt.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-13-repair-lifecycle-event-writeback.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-13-repair-interrupt-confirmation.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-10-sensitive-word-redaction-tools-scope.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-10-mcp-and-run-timeouts.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-10-fault-repair-place-clarification.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-08-summarization-hide-from-client.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-05-sensitive-word-redaction-middleware.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-04-frontend-login-password-md5.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-02-user-mcp-permissions.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-02-mcp-suggest-questions.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-01-wecom-agent-auth-binding.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-01-knowledge-base-grounding-interceptor.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-06-01-agent-auth-integration.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-26-run-events-request-params.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-21-wecom-deerflow-binding.md` |
+| `mine/ai-deer-flow/docs/LEAD_AGENT_SKILL_LOADING_EXAMPLE.md` |
+| `mine/ai-deer-flow/docs/DEERFLOW_SKILLS_LOADING.md` |
+| `mine/ai-deer-flow/backend/docs/superpowers/specs/2026-06-15-mcp-stream-bridge-refresh-persistence-design.md` |
+| `mine/ai-deer-flow/backend/docs/superpowers/specs/2026-06-15-mcp-stream-bridge-design.md` |
+| `mine/ai-deer-flow/backend/docs/summarization.md` |
+| `mine/ai-deer-flow/backend/docs/TECH_STACK.md` |
+| `mine/ai-deer-flow/backend/docs/README.md` |
+| `mine/ai-deer-flow/backend/docs/MCP_SERVER.md` |
+| `mine/ai-deer-flow/backend/docs/LEAD_AGENT_MCP_STREAM_BRIDGE_PLAN.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_MCP_RESOLVE_OPTIONS.md` |
+| `mine/ai-deer-flow/backend/docs/FAULT_REPAIR_DEPENDS_ON_FRONTEND_INTEGRATION.md` |
+| `mine/ai-deer-flow/backend/docs/DATA_REPORT_REFRESH_FRONTEND_INTEGRATION.md` |
+| `mine/ai-deer-flow/backend/docs/CHECKPOINT_BLOB_DECODE.md` |
+| `mine/ai-deer-flow/backend/docs/API.md` |
+| `mine/ai-deer-flow/backend/CLAUDE.md` |
+| `mine/ai-deer-flow/README.md` |
+| `mine/ai-deer-flow/CLAUDE.md` |
+| `mine/ai-deer-flow/AGENTS.md` |
+| `mine/ai-deer-flow/skills/public/web-design-guidelines/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/video-generation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/vercel-deploy-claimable/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/systematic-literature-review/templates/ieee.md` |
+| `mine/ai-deer-flow/skills/public/systematic-literature-review/templates/bibtex.md` |
+| `mine/ai-deer-flow/skills/public/systematic-literature-review/templates/apa.md` |
+| `mine/ai-deer-flow/skills/public/systematic-literature-review/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/surprise-me/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/references/workflows.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/references/schemas.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/references/output-patterns.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/eval-viewer/viewer.html` |
+| `mine/ai-deer-flow/skills/public/skill-creator/assets/eval_review.html` |
+| `mine/ai-deer-flow/skills/public/skill-creator/agents/grader.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/agents/comparator.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/agents/analyzer.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/skill-creator/LICENSE.txt` |
+| `mine/ai-deer-flow/skills/public/ppt-generation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/podcast-generation/templates/tech-explainer.md` |
+| `mine/ai-deer-flow/skills/public/podcast-generation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/newsletter-generation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/image-generation/templates/doraemon.md` |
+| `mine/ai-deer-flow/skills/public/image-generation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/github-deep-research/assets/report_template.md` |
+| `mine/ai-deer-flow/skills/public/github-deep-research/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/frontend-design/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/frontend-design/LICENSE.txt` |
+| `mine/ai-deer-flow/skills/public/find-skills/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/deep-research/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/data-analysis/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/consulting-analysis/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/code-documentation/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/claude-to-deerflow/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_word_cloud_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_violin_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_venn_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_treemap_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_spreadsheet.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_scatter_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_sankey_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_radar_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_pin_map.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_pie_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_path_map.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_organization_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_network_graph.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_mind_map.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_liquid_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_line_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_histogram_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_funnel_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_flow_diagram.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_fishbone_diagram.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_dual_axes_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_district_map.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_column_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_boxplot_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_bar_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/references/generate_area_chart.md` |
+| `mine/ai-deer-flow/skills/public/chart-visualization/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/bootstrap/templates/SOUL.template.md` |
+| `mine/ai-deer-flow/skills/public/bootstrap/references/conversation-guide.md` |
+| `mine/ai-deer-flow/skills/public/bootstrap/SKILL.md` |
+| `mine/ai-deer-flow/skills/public/academic-paper-review/SKILL.md` |
+| `mine/ai-deer-flow/frontend/src/components/workspace/settings/about.md` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/fe3f7974-1bcb-4a01-a950-79673baafefd/user-data/outputs/research_deerflow_20260201.md` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/fe3f7974-1bcb-4a01-a950-79673baafefd/user-data/outputs/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/f4125791-0128-402a-8ca9-50e0947557e4/user-data/outputs/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/d3e5adaf-084c-4dd5-9d29-94f1d6bccd98/user-data/outputs/diana_hu_research.md` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/c02bb4d5-4202-490e-ae8f-ff4864fc0d2e/user-data/outputs/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/b83fbb2a-4e36-4d82-9de0-7b2a02c2092a/user-data/outputs/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/ad76c455-5bf9-4335-8517-fc03834ab828/user-data/outputs/titanic_summary.txt` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/7f9dc56c-e49c-4671-a3d2-c492ff4dce0c/user-data/outputs/leica-master-photography-article.md` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/7cfa5f8f-a2f8-47ad-acbd-da7137baf990/user-data/outputs/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/5aa47db1-d0cb-4eb9-aea5-3dac1b371c5a/user-data/outputs/jiangsu-football/index.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/5aa47db1-d0cb-4eb9-aea5-3dac1b371c5a/user-data/outputs/jiangsu-football/favicon.html` |
+| `mine/ai-deer-flow/frontend/public/demo/threads/3823e443-4e2b-4679-b496-a9506eae462b/user-data/outputs/fei-fei-li-podcast-timeline.md` |
+| `mine/ai-deer-flow/frontend/README.md` |
+| `mine/ai-deer-flow/frontend/CLAUDE.md` |
+| `mine/ai-deer-flow/frontend/AGENTS.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-20-mcp-user-context-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-19-multi-mcp-mention-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-05-18-inline-mcp-mention-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-04-11-summarize-marker-design.md` |
+| `mine/ai-deer-flow/docs/superpowers/specs/2026-04-11-runjournal-history-evaluation.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-20-mcp-user-context.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-19-multi-mcp-mention.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-18-mcp-routing-prompt-injection-fix.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-18-inline-mcp-mention.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-05-18-chat-to-mcp-execution-flow.md` |
+| `mine/ai-deer-flow/docs/superpowers/plans/2026-04-10-event-store-history.md` |
+| `mine/ai-deer-flow/docs/plans/2026-04-01-langfuse-tracing.md` |
+| `mine/ai-deer-flow/docs/SKILL_NAME_CONFLICT_FIX.md` |
+| `mine/ai-deer-flow/docs/CODE_CHANGE_SUMMARY_BY_FILE.md` |
+| `mine/ai-deer-flow/docker/provisioner/README.md` |
+| `mine/ai-deer-flow/backend/docs/task_tool_improvements.md` |
+| `mine/ai-deer-flow/backend/docs/rfc-grep-glob-tools.md` |
+| `mine/ai-deer-flow/backend/docs/rfc-extract-shared-modules.md` |
+| `mine/ai-deer-flow/backend/docs/rfc-create-deerflow-agent.md` |
+| `mine/ai-deer-flow/backend/docs/plan_mode_usage.md` |
+| `mine/ai-deer-flow/backend/docs/middleware-execution-flow.md` |
+| `mine/ai-deer-flow/backend/docs/TODO.md` |
+| `mine/ai-deer-flow/backend/docs/TITLE_GENERATION_IMPLEMENTATION.md` |
+| `mine/ai-deer-flow/backend/docs/STREAMING.md` |
+| `mine/ai-deer-flow/backend/docs/SETUP.md` |
+| `mine/ai-deer-flow/backend/docs/PATH_EXAMPLES.md` |
+| `mine/ai-deer-flow/backend/docs/MEMORY_SETTINGS_REVIEW.md` |
+| `mine/ai-deer-flow/backend/docs/MEMORY_IMPROVEMENTS_SUMMARY.md` |
+| `mine/ai-deer-flow/backend/docs/MEMORY_IMPROVEMENTS.md` |
+| `mine/ai-deer-flow/backend/docs/GUARDRAILS.md` |
+| `mine/ai-deer-flow/backend/docs/CONFIGURATION.md` |
+| `mine/ai-deer-flow/backend/docs/AUTO_TITLE_GENERATION.md` |
+| `mine/ai-deer-flow/backend/docs/AUTH_UPGRADE.md` |
+| `mine/ai-deer-flow/backend/docs/AUTH_TEST_PLAN.md` |
+| `mine/ai-deer-flow/backend/docs/AUTH_TEST_DOCKER_GAP.md` |
+| `mine/ai-deer-flow/backend/docs/ARCHITECTURE.md` |
+| `mine/ai-deer-flow/backend/docs/APPLE_CONTAINER.md` |
+| `mine/ai-deer-flow/backend/README.md` |
+| `mine/ai-deer-flow/backend/CONTRIBUTING.md` |
+| `mine/ai-deer-flow/backend/AGENTS.md` |
+| `mine/ai-deer-flow/SECURITY.md` |
+| `mine/ai-deer-flow/README_zh.md` |
+| `mine/ai-deer-flow/README_ru.md` |
+| `mine/ai-deer-flow/README_ja.md` |
+| `mine/ai-deer-flow/README_fr.md` |
+| `mine/ai-deer-flow/Install.md` |
+| `mine/ai-deer-flow/CONTRIBUTING.md` |
+| `mine/ai-deer-flow/CODE_OF_CONDUCT.md` |
+| `mine/ai-deer-flow/.agent/skills/smoke-test/templates/report.local.template.md` |
+| `mine/ai-deer-flow/.agent/skills/smoke-test/templates/report.docker.template.md` |
+| `mine/ai-deer-flow/.agent/skills/smoke-test/references/troubleshooting.md` |
+| `mine/ai-deer-flow/.agent/skills/smoke-test/references/SOP.md` |
+| `mine/ai-deer-flow/.agent/skills/smoke-test/SKILL.md` |
+| `workspace/ai-frontend/.cursor/plans/报修_interrupt_迁移_38621359.plan.md` |
+| `mine/ai-frontend/.cursor/plans/报修_interrupt_迁移_38621359.plan.md` |
+| `workspace/ai-frontend/mocks/sse/dev-asknumber-stream.txt` |
+| `mine/ai-frontend/mocks/sse/dev-asknumber-stream.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/lib/web/subresource-integrity/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/best-practices/proxy.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/best-practices/client-certificate.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/best-practices/crawling.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/best-practices/writing-tests.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/best-practices/mocking-request.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/ContentType.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Client.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/api-lifecycle.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Util.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockClient.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockCallHistory.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Fetch.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/RetryHandler.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Dispatcher.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Cookies.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockCallHistoryLog.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/EventSource.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/RetryAgent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockPool.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/ClientStats.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockErrors.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/GlobalInstallation.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/CacheStorage.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Pool.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/PoolStats.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Errors.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/MockAgent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/WebSocket.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/H2CClient.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/RedirectHandler.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/CacheStore.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/DiagnosticsChannel.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/RoundRobinPool.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/BalancedPool.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/SnapshotAgent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Connector.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/ProxyAgent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Debug.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/EnvHttpProxyAgent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/docs/docs/api/Agent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/lib/vite/htmlReport/index.html` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/lib/vite/recorder/index.html` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/lib/vite/traceViewer/uiMode.html` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/lib/vite/traceViewer/snapshot.html` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/lib/vite/traceViewer/index.html` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/lib/helpers/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/lib/adapters/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/lib/env/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/lib/core/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/node_modules/mime-db/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/node_modules/mime-db/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/node_modules/mime-types/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/node_modules/mime-types/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mcp-proxy/node_modules/eventsource/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/uri-templates/test/uritemplate-test/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-heal.prompt.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-generate.prompt.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-generator.agent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-healer.agent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-planner.agent.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/lib/agents/playwright-test-plan.prompt.md` |
+| `Downloads/点评舆情/brightdata/node_modules/npm-run-path/node_modules/path-key/readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/lib/helpers/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/lib/adapters/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/lib/env/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/lib/core/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/node_modules/mime-db/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/node_modules/mime-db/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/node_modules/mime-types/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/node_modules/mime-types/HISTORY.md` |
+| `Downloads/点评舆情/crawler/src/web/templates/index.html` |
+| `Downloads/点评舆情/brightdata/node_modules/@standard-schema/spec/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@sindresorhus/merge-streams/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@modelcontextprotocol/sdk/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@tokenizer/token/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@tokenizer/inflate/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/qs/.github/SECURITY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/qs/.github/THREAT_MODEL.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/types/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/function-bind/.github/SECURITY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@hono/node-server/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@sec-ant/readable-stream/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@borewit/text-codec/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/@borewit/text-codec/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/@brightdata/mcp/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/qs/.github/SECURITY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/qs/.github/THREAT_MODEL.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/function-bind/.github/SECURITY.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-12_08-25Z-csv-data-display-in-html.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-13_05-13Z-merchant-list-tab-and-csv-data.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_07-01Z-removing-march-16-data-from-csv.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-13_02-58Z-removing-backend-loading-logic-in-index-html.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_12-35Z-current-script-logic-overview.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_01-48Z-自动爬取商户及评论方案.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_12-55Z-json-write-status-issue.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-17_01-40Z-data-cleaning-duplicate-issue.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-12_07-36Z-mitmproxy-installation-with-pip3.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-13_03-23Z-获取景枫中心商场商户信息.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-12_06-25Z-execution-of-dianping-fetcher-py.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_07-37Z-execution-error-in-terminals-file.md` |
+| `Downloads/点评舆情/Charles/.specstory/history/2026-03-16_05-55Z-merchant-review-crawling-configuration.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-06_09-42Z-codebase-exploration-and-analysis.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-06_09-42Z-美团和大众点评爬取方案.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-09_05-56Z-本地部署方案.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-09_07-19Z-python-crawler-execution-parameters.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-09_12-12Z-macos-微信抓包分析.md` |
+| `Downloads/点评舆情/crawler/.specstory/history/2026-03-09_07-14Z-mediacrawler-project-support-for-dazhong-dianping.md` |
+| `Downloads/点评舆情/crawler/.cursor/plans/美团点评爬虫方案_8cb77b35.plan.md` |
+| `Downloads/点评舆情/brightdata/.specstory/history/2026-03-09_09-25Z-bright-data-mcp-sentiment-analysis.md` |
+| `Downloads/点评舆情/brightdata/.specstory/history/2026-03-10_01-57Z-interface-high-frequency-keywords-removal.md` |
+| `Downloads/点评舆情/brightdata/.specstory/history/2026-03-09_05-47Z-bright-data-mcp-development-possibility.md` |
+| `Downloads/点评舆情/brightdata/.specstory/history/2026-03-09_02-30Z-数据爬取与舆情分析.md` |
+| `Downloads/点评舆情/brightdata/.specstory/history/2026-03-09_09-32Z-sentiment-data-collection-for-南京景枫中心.md` |
+| `Downloads/点评舆情/brightdata/node_modules/setprototypeof/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/pretty-ms/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/router/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/router/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/xsschema/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/xsschema/LICENSE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-object-atoms/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-object-atoms/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/unicorn-magic/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/isexe/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mime-db/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mime-db/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/media-typer/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/media-typer/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/debug/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/require-from-string/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/shebang-command/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fast-deep-equal/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/human-signals/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fflate/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fflate/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/on-finished/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/on-finished/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/strtok3/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/strtok3/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/object-inspect/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/emoji-regex/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/emoji-regex/LICENSE-MIT.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/ajv/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-map/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-map/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/which/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/which/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/MIGRATION_GUIDE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/axios/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-set-tostringtag/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-set-tostringtag/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/finalhandler/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/finalhandler/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/send/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/wrappy/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/follow-redirects/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/etag/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/etag/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/parseurl/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/parseurl/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/execa/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/string-width/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/statuses/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/statuses/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/escape-html/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/is-unicode-supported/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/gopd/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/gopd/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cookie/SECURITY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cookie/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ipaddr.js/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/asynckit/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/yargs/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cross-spawn/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/delayed-stream/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/form-data/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-proto/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-proto/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fuse.js/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/object-assign/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/parse-ms/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cliui/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/cliui/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cliui/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/serve-static/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/yoctocolors/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-stream/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cors/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/token-types/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/token-types/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/figures/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/express-rate-limit/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/express-rate-limit/license.md` |
+| `Downloads/点评舆情/brightdata/node_modules/body-parser/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/negotiator/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/negotiator/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/forwarded/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/forwarded/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cookie-signature/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/cookie-signature/History.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fast-uri/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ansi-styles/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/accepts/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/accepts/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/http-errors/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/http-errors/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/hono/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/strict-event-emitter-types/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/raw-body/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ieee754/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/has-symbols/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/has-symbols/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/json-schema-typed/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/json-schema-typed/LICENSE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-caller-file/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-caller-file/LICENSE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mcp-proxy/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/unpipe/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/unpipe/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/uri-templates/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/path-key/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/color-convert/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/color-convert/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/vary/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/vary/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/jose/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/jose/LICENSE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ansi-regex/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright/ThirdPartyNotices.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/is-stream/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/type-is/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/type-is/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/json-schema-traverse/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mime-types/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/mime-types/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/is-promise/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-weakmap/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-weakmap/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/safer-buffer/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/safer-buffer/Porting-Buffer.md` |
+| `Downloads/点评舆情/brightdata/node_modules/hasown/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/hasown/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/path-to-regexp/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/dunder-proto/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/dunder-proto/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/combined-stream/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/call-bound/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/call-bound/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/qs/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/qs/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/qs/LICENSE.md` |
+| `Downloads/点评舆情/brightdata/node_modules/zod-to-json-schema/contributing.md` |
+| `Downloads/点评舆情/brightdata/node_modules/zod-to-json-schema/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/zod-to-json-schema/changelog.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fastmcp/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-intrinsic/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/get-intrinsic/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/undici/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fresh/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/fresh/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-define-property/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-define-property/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/color-name/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/iconv-lite/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/inherits/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/yargs-parser/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/yargs-parser/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/yargs-parser/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/is-fullwidth-code-point/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ee-first/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/npm-run-path/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/function-bind/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/function-bind/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ajv-formats/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/file-type/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/merge-descriptors/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/uint8array-extras/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/proxy-from-env/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/once/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/y18n/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/y18n/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/wrap-ansi/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/signal-exit/LICENSE.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/signal-exit/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/encodeurl/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/express/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/call-bind-apply-helpers/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/call-bind-apply-helpers/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/bytes/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/bytes/History.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-list/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/side-channel-list/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/range-parser/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/range-parser/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ip-address/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/escalade/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/depd/Readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/depd/History.md` |
+| `Downloads/点评舆情/brightdata/node_modules/proxy-addr/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/proxy-addr/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/has-tostringtag/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/has-tostringtag/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/playwright-core/ThirdPartyNotices.txt` |
+| `Downloads/点评舆情/brightdata/node_modules/math-intrinsics/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/math-intrinsics/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/content-disposition/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/content-disposition/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/strip-final-newline/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ms/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/ms/license.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-errors/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/es-errors/CHANGELOG.md` |
+| `Downloads/点评舆情/brightdata/node_modules/eventsource-parser/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/content-type/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/content-type/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/strip-ansi/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/toidentifier/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/toidentifier/HISTORY.md` |
+| `Downloads/点评舆情/brightdata/node_modules/eventsource/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/shebang-regex/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/zod/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/is-plain-obj/readme.md` |
+| `Downloads/点评舆情/brightdata/node_modules/pkce-challenge/README.md` |
+| `Downloads/点评舆情/brightdata/node_modules/pkce-challenge/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/setprototypeof/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/router/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/router/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-object-atoms/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-object-atoms/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/mime-db/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/mime-db/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/media-typer/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/media-typer/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/debug/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/on-finished/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/on-finished/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/object-inspect/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-map/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-map/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/MIGRATION_GUIDE.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/axios/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-set-tostringtag/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-set-tostringtag/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/finalhandler/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/finalhandler/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/send/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/wrappy/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/follow-redirects/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/etag/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/etag/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/parseurl/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/parseurl/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/statuses/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/statuses/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/escape-html/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/gopd/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/gopd/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/cookie/SECURITY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/cookie/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/ipaddr.js/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/asynckit/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/delayed-stream/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/form-data/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/get-proto/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/get-proto/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/serve-static/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/body-parser/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/negotiator/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/negotiator/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/forwarded/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/forwarded/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/cookie-signature/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/cookie-signature/History.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/accepts/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/accepts/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/http-errors/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/http-errors/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/raw-body/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/has-symbols/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/has-symbols/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/unpipe/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/unpipe/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/vary/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/vary/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/type-is/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/type-is/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/mime-types/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/mime-types/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/is-promise/readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-weakmap/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-weakmap/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/safer-buffer/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/safer-buffer/Porting-Buffer.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/hasown/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/hasown/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/path-to-regexp/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dunder-proto/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dunder-proto/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/combined-stream/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/call-bound/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/call-bound/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/qs/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/qs/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/qs/LICENSE.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/get-intrinsic/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/get-intrinsic/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/fresh/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/fresh/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-define-property/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-define-property/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/iconv-lite/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/inherits/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/ee-first/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/function-bind/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/function-bind/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/merge-descriptors/readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/proxy-from-env/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/once/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/encodeurl/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/express/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/call-bind-apply-helpers/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/call-bind-apply-helpers/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/bytes/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/bytes/History.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-list/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/side-channel-list/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/range-parser/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/range-parser/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/depd/Readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/depd/History.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/proxy-addr/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/proxy-addr/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/has-tostringtag/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/has-tostringtag/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dotenv/SECURITY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dotenv/README-es.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dotenv/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/dotenv/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/math-intrinsics/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/math-intrinsics/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/content-disposition/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/content-disposition/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/ms/readme.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/ms/license.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-errors/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/es-errors/CHANGELOG.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/content-type/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/content-type/HISTORY.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/toidentifier/README.md` |
+| `Downloads/nodeServer/wxApiMock/node_modules/toidentifier/HISTORY.md` |
+| `Downloads/Model capabilities/评估工时/UIR-729/GMP-6832/index.md` |
+| `Downloads/Model capabilities/评估工时/UIR-729/BAP-10980/index.md` |
+| `Downloads/Model capabilities/评估工时/UIR-729/KMP-9814/index.md` |
+| `Downloads/Model capabilities/评估工时/skills/estimate-effort-from-jira-prd/UseSkill.md` |
+| `Downloads/Model capabilities/评估工时/skills/estimate-effort-from-jira-prd/SKILL.md` |
+| `Downloads/Agent/.cursor/skills/code-review-checklist/SKILL.md` |
+| `Downloads/Agent/.cursor/skills/uniapp-miniprogram-development/SKILL.md` |
+| `Downloads/Agent/.cursor/skills/vue-component-development/SKILL.md` |
+| `Downloads/点评舆情/Charles/.specstory/.what-is-this.md` |
+| `Downloads/点评舆情/crawler/data/debug_mall.html` |
+| `Downloads/点评舆情/crawler/.specstory/.what-is-this.md` |
+| `Downloads/点评舆情/brightdata/.specstory/.what-is-this.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-01_12-21-13Z-ai-impact-on-china's-k12-education.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-13_12-46-58Z-q1-2026-work-summary-by-system.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-03-31_01-46-46Z-prd-page-interaction-workload-evaluation.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-08_06-38-12Z-charles-捕获高德应用流量配置.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_05-42-16Z-markdown-file-for-xmind-import.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-01_12-21-13Z-谷歌和克劳德在中国的使用问题.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-03-25_03-27-04Z-手机端与桌面端对话区分.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-08_06-49-36Z-安卓模拟器代理设置.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-08_08-33-53Z-高德地图-有没有提供能够查询地图上某个商场下面的楼层导览全部数据的api-？.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_02-09-38Z-task-division-for-small-teams.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-01_12-21-13Z-前端技术专家的未来方向.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-14_03-01-50Z-html-content-rendering-with-canvas.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-23_03-29-48Z-figma-html-to-design-in-mcp.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-08_08-33-53Z-高德地图楼层导览api查询.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_06-34-35Z-copilotkit-with-reactjs-and-next.js.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-03-26_07-39-35Z-前端工时评估与md文件生成.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-24_07-15-29Z-chat-name-generation-process.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_05-14-39Z-vue-frontend-project-directory-structure-analysis.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-27_09-26-06Z-frontend-workload-assessment-for-internal-jira-tickets.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_02-43-18Z-base-engineering-project-structure.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-04-01_12-21-13Z-iphone-13-mini-ios-upgrade-concerns.md` |
+| `Downloads/Model capabilities/.specstory/history/2026-05-28_06-34-35Z-webview-compatibility-with-copilotkit-and-reactjs.md` |
+| `Downloads/Model capabilities/安卓模拟器/gaode/高德cURL.txt` |
+| `Downloads/Model capabilities/安卓模拟器/gaode/viewer.html` |
+| `Downloads/Model capabilities/评估工时/BAP-10969/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10969/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-6826/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-6827/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/DP-1676/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/DP-1677/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10972/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10515/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10515/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-7030/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-7020/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-7029/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-7019/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/KMP-9123/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/KMP-9123/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-6825/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-6825/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-6822/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-6822/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-6823/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-6823/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/GMP-6830/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/KMP-9847/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/DP-1675/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/DP-1674/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/GMP-6831/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/KMP-9848/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10971/前端工时评估.md` |
+| `Downloads/Model capabilities/评估工时/BAP-10971/任务描述.txt` |
+| `Downloads/Model capabilities/评估工时/BAP-10970/前端工时评估.md` |
+| `Downloads/log-analyzer/.specstory/history/2026-03-04_12-15Z-logging-analysis-system-design.md` |
+| `Downloads/log-analyzer/.specstory/history/2026-03-05_08-03Z-服务器日志路径查询.md` |
+| `Downloads/log-analyzer/.specstory/history/2026-03-04_09-03Z-default-selection-for-data-model.md` |
+| `Downloads/Agent/.specstory/history/2026-01-26_01-20Z-光标前的聊天记录.md` |
+| `Downloads/Agent/.specstory/history/2026-01-26_09-17Z-开发光标规则与技能.md` |
+| `Downloads/Agent/.specstory/history/2026-01-26_06-48Z-开发人员ai工具实用指南.md` |
+| `Downloads/点评舆情/crawler/README.md` |
+| `Downloads/点评舆情/crawler/requirements.txt` |
+| `Downloads/点评舆情/brightdata/README.md` |
+| `Downloads/点评舆情/brightdata/index.html` |
+| `Downloads/Model capabilities/AI助理设计/目录结构设计v1.md` |
+| `Downloads/Model capabilities/AI助理设计/目录结构设计v3-设计.md` |
+| `Downloads/Model capabilities/AI助理设计/目录结构设计v3.md` |
+| `Downloads/Model capabilities/AI助理设计/目录结构设计v3-xmind.md` |
+| `Downloads/Model capabilities/AI助理设计/目录结构设计v2.md` |
+| `Downloads/Model capabilities/绩效填报/2026一季度.md` |
+| `Downloads/log-analyzer/.specstory/.what-is-this.md` |
+| `Downloads/Agent/.specstory/.what-is-this.md` |
+| `Downloads/Agent/Artifacts/course-full-notes.md` |
+| `Downloads/前端文档留存/脑图梳理/目录结构.md` |
+| `Downloads/点评舆情/response.html` |
+| `Downloads/log-analyzer/ssh-log-analyzer.html` |
+| `Downloads/Agent/web项目技术栈.md` |
+| `Downloads/Agent/cursor_gmpapplet_home.md` |
+| `Downloads/Agent/web项目开发规则.md` |
+| `Downloads/Agent/项目开发规范.md` |
+| `Downloads/Agent/AI工具使用实践指南-完整版.md` |
+| `Downloads/Agent/cursor_gmpapplet_propertyServicePage.md` |
+| `Downloads/Agent/cursor_quarter_performance_revie.md` |
+| `Downloads/Agent/cursor_uniapp.md` |
+| `Downloads/Agent/微信小程序项目.md` |
+| `Downloads/Agent/cursor_015_014.md` |
+| `Downloads/Agent/cursor_bap_loginPage.md` |
+| `Downloads/Agent/cursor_actionlog_actionwrapper.md` |
+| `Downloads/Agent/AI工具使用实践指南-简洁版.md` |
+| `Downloads/Agent/cursor_前后端加签逻辑.md` |
+| `Downloads/Agent/cursor_kmpweb_authcontrol.md` |
+| `Downloads/Agent/cursor_gmpweb_actionlogdesign.md` |
+| `Downloads/Agent/cursor_stored_value_card_verification_r.md` |
+| `Downloads/Agent/cursor_kmpweb_routesdesign.md` |
+| `Downloads/Agent/cursor_gmpweb_configPage.md` |
+| `Downloads/Agent/cursor_changePickLocation.md` |
+| `Downloads/Agent/cursor_gmpweb_configPage_usercenterPage.md` |
+| `Downloads/Agent/cursor_ci_cd_git.md` |
+| `Downloads/Agent/cursor_vant.md` |
+| `Downloads/Agent/cursor_gmpweb_actionlog_btncode.md` |
+| `Downloads/数据中台原型_v2.0.html` |
+| `workspace/ai-frontend/docs/echarts-brand-color-scheme.md` |
+| `mine/ai-frontend/docs/echarts-brand-color-scheme.md` |
+| `workspace/sgj-dashboard-web/public/dynamicConfig.md` |
+| `workspace/sgj-dashboard-web/index.html` |
+| `workspace/sgj-dashboard-web/README.md` |
+| `workspace/bap-frontend/docs/api-notes/BAP-11339-附件归属部门.md` |
+| `mine/ai-frontend/docs/BFF-AGUI-SSE.md` |
+| `workspace/ai-frontend/docs/BFF-AGUI-SSE.md` |
+| `workspace/ai-frontend/README.md` |
+| `mine/ai-frontend/README.md` |
+| `mine/ai-frontend/mocks/sse/dev-knowledge-stream.txt` |
+| `workspace/ai-frontend/mocks/sse/dev-knowledge-stream.txt` |
+| `workspace/ai-frontend/docs/界面视觉风格规范.md` |
+| `mine/ai-frontend/docs/界面视觉风格规范.md` |
+| `workspace/ai-frontend/docs/render_card-agent-skill.md` |
+| `mine/ai-frontend/docs/render_card-agent-skill.md` |
+| `mine/ai-frontend/.cursor/plans/review-fixes_186eb362.plan.md` |
+| `workspace/ai-frontend/.cursor/plans/review-fixes_186eb362.plan.md` |
+| `workspace/ai-frontend/.cursor/plans/mvp_分阶段落地_89b9e55d.plan.md` |
+| `mine/ai-frontend/.cursor/plans/mvp_分阶段落地_89b9e55d.plan.md` |
+| `workspace/dp-web/prd/计算指标需求说明.md` |
+| `workspace/dp-web/prd/派生指标需求说明_20260603.md` |
+| `workspace/dp-web/prd/数据中台原型_v2.1.html` |
+| `workspace/bap-frontend/apps/bap-h5/docs/配置设计与初始化时序.md` |
+| `workspace/bap-frontend/apps/bap-h5/docs/语音报修交互流程文档.md` |
+| `workspace/config-frontend/README.md` |
+| `workspace/dp-web/coverage/indicatorFormHelpers.js.html` |
+| `workspace/dp-web/coverage/index.html` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-smart-light-api.md` |
+| `mine/python-demo/Charles/docs/后端技术栈.md` |
+| `mine/python-demo/Charles/docs/运维-环境准备清单（简化）.md` |
+| `mine/python-demo/Charles/docs/INDEX.md` |
+| `mine/python-demo/Charles/docs/运维部署手册.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-iot-monitor-config-api.md` |
+| `workspace/kmp-web/README.md` |
+| `workspace/kmp-web/.cursor/skills/kmp-playwright-e2e/SKILL.md` |
+| `workspace/kmp-web/.cursor/skills/kmp-nested-config-feature/SKILL.md` |
+| `workspace/bap-frontend/docs/handoffs/2026-05-06-offline-device-alarm-whitelist.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-offline-device-alarm-whitelist-api.md` |
+| `workspace/bap-frontend/docs/handoffs/2026-04-29-vrv-air-condition.md` |
+| `mine/python-demo/Charles/apps/dashboard/index.html` |
+| `mine/python-demo/Charles/docs/小程序评价采集-现状与落地建议（给产品）.md` |
+| `mine/python-demo/Charles/README.md` |
+| `workspace/sso-web/public/dynamicConfig.md` |
+| `workspace/bap-frontend/prompts/multi-agent-review.md` |
+| `workspace/bap-frontend/prompts/multi-agent-feature.md` |
+| `workspace/bap-frontend/prompts/multi-agent-cross-package.md` |
+| `workspace/bap-frontend/prompts/multi-agent-bugfix.md` |
+| `workspace/bap-frontend/docs/api-notes/template.md` |
+| `workspace/bap-frontend/docs/api-notes/devmgr-air-condition-api.md` |
+| `workspace/bap-frontend/README.md` |
+| `workspace/bap-frontend/CLAUDE.md` |
+| `workspace/bap-frontend/AGENTS.md` |
+| `workspace/bap-frontend/apps/bap-web/src/feature-docs/vrv-air-condition-management-handoff.md` |
+| `workspace/bap-frontend/apps/bap-web/src/feature-docs/intelligent-lighting-management-handoff.md` |
+| `workspace/bap-frontend/apps/bap-web/e2e.html` |
+| `mine/python-demo/Charles/docs/小程序评价采集-流程说明（简化）.md` |
+| `workspace/bap-frontend/apps/bap-h5/index.html` |
+| `workspace/gmp-h5/.specstory/history/2026-02-25_07-53-05Z-wechat-mini-program-webview-h5-development-guidance.md` |
+| `workspace/gmp-h5/.specstory/history/2025-10-28_06-33-06Z-注册来源差异分析.md` |
+| `workspace/bap-frontend/apps/bap-h5/public/xR0svfn7IV.txt` |
+| `workspace/bap-frontend/.cursor/skills/debug-error.md` |
+| `workspace/bap-frontend/.cursor/skills/code-review-checklist.md` |
+| `workspace/bap-frontend/.cursor/skills/add-api-interface.md` |
+| `workspace/dp-web/login-snapshot.md` |
+| `workspace/dp-web/public/errorPage.html` |
+| `workspace/dp-web/index.html` |
+| `workspace/dp-web/README.md` |
+| `mine/python-demo/Charles/docs/legacy/dianping_workflow.txt` |
+| `workspace/.specstory/.what-is-this.md` |
+| `workspace/kmp-web/.cursor/skills/write-unit-test.md` |
+| `workspace/kmp-web/repo_wiki.md` |
+| `workspace/realtor-h5/public/index.html` |
+| `workspace/realtor-web/public/index.html` |
+| `workspace/realtor-web/README.md` |
+| `workspace/realtor-h5/README.md` |
+| `workspace/gmp-applet-web/pages-service/components/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-service/components/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-service/components/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-service/components/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/bap-frontend/apps/bap-web/src/views/parkManage/yardConfiguration/dataDictionary/README.md` |
+| `workspace/bap-frontend/apps/bap-web/src/views/parkManage/dataPerspective/parkOverview/components/README.md` |
+| `workspace/bap-frontend/apps/bap-web/src/views/parkManage/dataPerspective/carAnalysis/components/README.md` |
+| `workspace/bap-frontend/apps/bap-merchant-web/public/publish.readme.md` |
+| `workspace/bap-frontend/apps/bap-merchant-web/public/index.html` |
+| `workspace/bap-frontend/apps/bap-merchant-web/public/errorPage.html` |
+| `workspace/bap-frontend/apps/bap-merchant-web/index.html` |
+| `workspace/kmp-web/src/views/Membership/levelAdjust/README.md` |
+| `workspace/bap-applet/README.md` |
+| `workspace/kmp-web/src/views/Membership/levelInvite/README.md` |
+| `workspace/config-frontend/index.html` |
+| `workspace/bap-frontend/apps/bap-web/README.md` |
+| `workspace/bap-frontend/apps/bap-web/public/index.html` |
+| `workspace/bap-frontend/apps/bap-web/index.html` |
+| `workspace/gmp-h5/public/publish.readme.md` |
+| `workspace/plugin-applet/doc/README.md` |
+| `workspace/gmp-h5/README.md` |
+| `workspace/bap-frontend/apps/bap-web/src/components/tooltipCascader/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/@cloudbase/database/src/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bson/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bson/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/test/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/test/database/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash/release.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/@cloudbase/database/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/storage.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/packageUpgrade.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/log.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/introduction.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/initialization.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/functions.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/env.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/database.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/sortByCount.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/unwind.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/sort.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/skip.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/sample.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/replaceRoot.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/project.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/match.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/lookup.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/limit.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/group.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/geoNear.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/end.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/count.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/bucket.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/bucketAuto.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/stages/addFields.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/zip.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/year.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/week.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/trunc.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/toUpper.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/toLower.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/switch.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/sum.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/subtract.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/substrBytes.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/substrCP.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/substr.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/strLenCP.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/strLenBytes.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/strcasecmp.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/stdDevSamp.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/stdDevPop.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/sqrt.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/split.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/slice.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/size.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/setUnion.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/setIsSubset.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/setIntersection.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/setEquals.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/setDifference.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/second.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/reverseArray.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/reduce.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/range.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/push.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/pow.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/or.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/objectToArray.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/not.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/neq.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/multiply.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/month.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/mod.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/minute.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/min.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/millisecond.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/signature-nodejs/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/mergeObjects.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/max.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/map.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/types/database/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/lte.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/lt.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/log10.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/log.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/ln.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/literal.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/let.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/last.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/isoWeekYear.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/isoWeek.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/isoDayOfWeek.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/isArray.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/indexOfCP.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/indexOfBytes.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/indexOfArray.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/in.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/ifNull.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/gte.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/hour.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/gt.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/floor.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/first.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/filter.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/exp.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/eq.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/divide.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dayOfYear.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dayOfWeek.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dayOfMonth.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dateToString.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dateFromString.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/dateFromParts.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/concat.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/cond.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/concatArrays.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/cmp.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/ceil.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/avg.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/arrayToObject.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/arrayElemAt.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/anyElementTrue.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/and.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/allElementsTrue.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/addToSet.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/add.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/operators/abs.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/expression.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/aggregateCommand.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/database/aggregate/aggregate.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/src/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/docs/auth.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/CONTRIBUTING_GUIDE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/node-sdk/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/storage.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/log.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/introduction.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/initialization.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/functions.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/env.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/database.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/docs/auth.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/CONTRIBUTING_GUIDE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/node_modules/tcb-admin-node/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/database/src/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@cloudbase/database/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/google/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bcrypt-pbkdf/CONTRIBUTING.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bcrypt-pbkdf/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@types/long/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/ext/descriptor/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/ext/debug/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/dist/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/dist/minimal/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@types/retry/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/dist/light/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/aspromise/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/agentkeepalive/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/agentkeepalive/History.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/float/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/url/node_modules/punycode/LICENSE-MIT.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/url/node_modules/punycode/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@types/clone/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/eventemitter/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/utf8/tests/data/utf8.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/pool/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/utf8/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/assert-plus/CHANGES.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/assert-plus/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/fetch/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/path/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/cli/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/dashdash/CHANGES.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/cli/node_modules/tmp/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/asynckit/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/inquire/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/dashdash/LICENSE.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/aws-sign2/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/dashdash/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/cli/node_modules/os-tmpdir/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/diff/release-notes.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/is-typedarray/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/diff/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/is-typedarray/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/cli/lib/tsd-jsdoc/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/diff/CONTRIBUTING.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/arg/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/arg/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/core-util-is/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/debug/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/delayed-stream/Readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ajv/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/clone/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/has/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/call-bind/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/aws4/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ajv/lib/dotjs/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/call-bind/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/caseless/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/buffer-equal-constant-time/LICENSE.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/buffer-equal-constant-time/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ecc-jsbn/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/depd/Readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/depd/History.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tweetnacl/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ecdsa-sig-formatter/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/extsprintf/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/get-intrinsic/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/is-regex/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tweetnacl/AUTHORS.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/is-regex/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/get-intrinsic/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/forever-agent/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tweetnacl/PULL_REQUEST_TEMPLATE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/getpass/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ts-node/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/protobufjs/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/har-schema/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tweetnacl/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/function-bind/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/has-tostringtag/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/sshpk/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/has-tostringtag/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.clonedeep/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsbn/example.html` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/isstream/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/humanize-ms/History.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/isstream/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/http-signature/http_signing.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/humanize-ms/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/wx-server-sdk/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/psl/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/http-signature/CHANGES.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsbn/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/http-signature/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/json-stringify-safe/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/json-stringify-safe/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsonwebtoken/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tunnel-agent/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsonwebtoken/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.set/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jwa/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.unset/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.isboolean/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jws/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jws/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.isinteger/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.isplainobject/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.includes/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/retry/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/semver/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/stealthy-require/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/request-promise/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/performance-now/license.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/semver/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.isnumber/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/performance-now/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/uri-js/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.isstring/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/querystring/Readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/querystring/License.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/verror/CONTRIBUTING.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/verror/CHANGES.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/querystring/History.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/verror/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/xml2js/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/punycode/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/make-error/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/punycode/LICENSE-MIT.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.once/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/request/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/qs/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/request/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/qs/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/qs/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/yn/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/source-map/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/uuid/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/url/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/uuid/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/uuid/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/mime-db/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/mime-db/HISTORY.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/has-symbols/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/has-symbols/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/fast-json-stable-stringify/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tslib/LICENSE.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tslib/CopyrightNotice.txt` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/asn1/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/source-map-support/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tslib/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/request-promise-core/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/source-map-support/LICENSE.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsprim/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/buffer/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/extend/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/fast-deep-equal/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsprim/CONTRIBUTING.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/buffer/AUTHORS.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/lodash.merge/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/json-schema/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/jsprim/CHANGES.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/har-validator/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/mime-types/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/safer-buffer/Readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/xmlbuilder/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/json-schema-traverse/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/extend/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/base64-js/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/mime-types/HISTORY.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/long/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/safe-buffer/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/safer-buffer/Porting-Buffer.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bluebird/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/buffer-from/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ieee754/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/is-stream/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tough-cookie/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ms/readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/oauth-sign/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/xmlbuilder/CHANGELOG.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/combined-stream/Readme.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/form-data/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/ms/license.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/source-map/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/codegen/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@protobufjs/base64/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/bluebird/changelog.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/@types/node/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/sax/README.md` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tslib/tslib.html` |
+| `workspace/wx-applet-cloud/cloudfunctions/public/node_modules/tslib/tslib.es6.html` |
+| `workspace/wx-applet-cloud/jump-mp.html` |
+| `workspace/wx-applet-cloud/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/tools/demo/uni-app/index.html` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/tools/demo/uni-app/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/src/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/txv-video/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/template/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/style/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/search/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/markdown/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/latex/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/img-cache/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/highlight/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/emoji/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/editable/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/card/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/audio/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/plugins/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/question/feedback.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/question/faq.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/question/contribution.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/overview/quickstart.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/overview/feature.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/index.html` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/changelog/changelog.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/basic/prop.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/basic/event.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/advanced/plugin.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/advanced/develop.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/advanced/api.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/_sidebar.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/_coverpage.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/docs/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-kmp/shopCard/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/tools/demo/uni-app/index.html` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/tools/demo/uni-app/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/src/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/txv-video/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/template/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/style/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/search/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/markdown/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/latex/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/img-cache/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/highlight/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/emoji/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/editable/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/card/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/audio/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/plugins/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/question/feedback.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/question/faq.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/question/contribution.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/overview/quickstart.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/overview/feature.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/index.html` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/changelog/changelog.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/basic/prop.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/basic/event.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/advanced/plugin.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/advanced/develop.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/advanced/api.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/_sidebar.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/_coverpage.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/docs/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/README.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-kmp/rightPackage/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/gmp-applet-web/pages-gmp/components/mp-html/dist/uni-app/static/app-plus/mp-html/local.html` |
+| `workspace/gmp-applet-web/pages-gmp/components/mp-html/.github/ISSUE_TEMPLATE/question.md` |
+| `workspace/gmp-applet-web/pages-gmp/components/mp-html/.github/ISSUE_TEMPLATE/enhancement.md` |
+| `workspace/gmp-applet-web/pages-gmp/components/mp-html/.github/ISSUE_TEMPLATE/bug.md` |
+| `workspace/gmp-applet-web/components/v-swiper/index.md` |
+| `workspace/kmp-web/src/components/common/TooltipSelect/README.md` |
+| `workspace/gmp-h5/public/index.html` |
+| `workspace/bap-frontend/apps/bap-web/src/components/tooltipSelect/README.md` |
+| `workspace/bap-frontend/apps/bap-web/public/publish.readme.md` |
+| `workspace/bap-frontend/apps/bap-web/src/components/selectGroup/README.md` |
+| `workspace/bap-frontend/apps/bap-h5/README.md` |
+| `workspace/lottery-web/lottery-dist/index.html` |
+| `workspace/sso-web/src/packages/sso-login/index.html` |
+| `workspace/sso-web/src/packages/sso-admin/index.html` |
+| `workspace/kmp-web/public/publish.readme.md` |
+| `workspace/sso-web/README.md` |
+| `workspace/gmp-h5/public/errorPage.html` |
+| `workspace/bi-web/public/publish.readme.md` |
+| `workspace/bap-frontend/packages/components/index.html` |
+| `workspace/bap-frontend/packages/apis/index.html` |
+| `workspace/dtsp-web/public/publish.readme.md` |
+| `workspace/dtsp-web/public/index.html` |
+| `workspace/dtsp-web/public/errorPage.html` |
+| `workspace/dtsp-web/README.md` |
+| `workspace/gmp-frontend/packages/utils/README.md` |
+| `workspace/gmp-frontend/apps/gmp-web/public/errorPage.html` |
+| `workspace/config-frontend/public/publish.readme.md` |
+| `workspace/config-frontend/public/index.html` |
+| `workspace/config-frontend/public/errorPage.html` |
+| `workspace/bap-frontend/packages/utils/index.html` |
+| `workspace/bap-frontend/packages/utils/README.md` |
+| `workspace/bap-frontend/packages/apis/README.md` |
+| `workspace/bap-frontend/apps/display-web/public/publish.readme.md` |
+| `workspace/bap-frontend/apps/display-web/public/errorPage.html` |
+| `workspace/bap-frontend/apps/display-web/index.html` |
+| `workspace/bap-frontend/apps/display-web/README.md` |
+| `workspace/bap-frontend/apps/bap-web/public/errorPage.html` |
+| `workspace/bap-frontend/apps/bap-h5/public/i0d0c0mjQE.txt` |
+| `workspace/bap-frontend/apps/bap-h5/public/h5form/equipment/fRKFY4mLvW.txt` |
+| `workspace/bap-frontend/apps/bap-h5/public/fRKFY4mLvW.txt` |
+| `workspace/bap-frontend/apps/bap-h5/public/errorPage.html` |
+| `workspace/bi-web/README.md` |
+| `workspace/bi-web/index.html` |
+| `workspace/bi-web/public/index.html` |
+| `workspace/bi-web/public/errorPage.html` |
+| `workspace/display-web/index.html` |
+| `workspace/display-web/public/publish.readme.md` |
+| `workspace/display-web/public/errorPage.html` |
+| `workspace/display-web/README.md` |
+| `workspace/kmp-h5/public/errorPage.html` |
+| `workspace/kmp-web/public/errorPage.html` |
+| `workspace/kmp-h5/public/publish.readme.md` |
+| `workspace/lottery-web/index.html` |
+| `workspace/gmp-h5/public/4pCRoUYIfc.txt` |
+| `workspace/jf-ui-web/docs/quickstart.md` |
+| `workspace/jf-ui-web/docs/index.md` |
+| `workspace/jf-ui-web/docs/components/upload.md` |
+| `workspace/jf-ui-web/docs/components/tabs.md` |
+| `workspace/jf-ui-web/docs/components/steps.md` |
+| `workspace/jf-ui-web/docs/components/popover.md` |
+| `workspace/jf-ui-web/docs/components/pagination.md` |
+| `workspace/jf-ui-web/docs/components/modal.md` |
+| `workspace/jf-ui-web/docs/components/menu.md` |
+| `workspace/jf-ui-web/docs/components/list.md` |
+| `workspace/jf-ui-web/docs/components/layout.md` |
+| `workspace/jf-ui-web/docs/components/input.md` |
+| `workspace/jf-ui-web/docs/components/grid.md` |
+| `workspace/jf-ui-web/docs/components/collapse.md` |
+| `workspace/jf-ui-web/docs/components/button.md` |
+| `workspace/jf-ui-web/docs/components/Anchor.md` |
+| `workspace/jf-ui-web/docs/api-examples.md` |
+| `workspace/jf-ui-web/demo/index.html` |
+| `workspace/jf-ui-web/README.md` |
+| `workspace/jf-ui-mobile/README.md` |
+| `workspace/gmp-applet-admin/miniprogram_npm/crypto-js/README.md` |
+| `workspace/gmp-applet-admin/miniprogram_npm/crypto-js/CONTRIBUTING.md` |
+| `workspace/kmp-h5/README.md` |
+| `workspace/frontend-common/public/document/echarts-demo/line/line_title.md` |
+| `workspace/frontend-common/public/document/echarts-demo/line/line_area.md` |
+| `workspace/frontend-common/public/document/echarts-demo/line/line.md` |
+| `workspace/kmp-h5/public/index.html` |
+| `workspace/kmp-h5/public/i0d0c0mjQE.txt` |
+| `workspace/gmp-h5/public/i0d0c0mjQE.txt` |
+| `workspace/frontend-common/public/md/bar.md` |
+| `workspace/frontend-common/public/document/框架配置.md` |
+| `workspace/frontend-common/public/document/工具配置.md` |
+| `workspace/frontend-common/public/document/前后端约定.md` |
+| `workspace/frontend-common/public/document/公共库.md` |
+| `workspace/frontend-common/public/document/三方工具库.md` |
+| `workspace/frontend-common/public/document/toolConfiguration.md` |
+| `workspace/frontend-common/public/document/thirdParty.md` |
+| `workspace/frontend-common/public/document/publicLibrary.md` |
+| `workspace/frontend-common/public/document/frameConfiguration.md` |
+| `workspace/frontend-common/public/document/echarts-demo/radar/radar_table.md` |
+| `workspace/frontend-common/public/document/echarts-demo/pie/pie_table.md` |
+| `workspace/frontend-common/public/document/echarts-demo/line/line_table.md` |
+| `workspace/frontend-common/public/document/echarts-demo/funnel/funnel_table.md` |
+| `workspace/frontend-common/public/document/echarts-demo/funnel/funnel.md` |
+| `workspace/frontend-common/public/document/echarts-demo/bar/bar_title.md` |
+| `workspace/frontend-common/public/document/echarts-demo/bar/bar_table.md` |
+| `workspace/frontend-common/public/document/echarts-demo/bar/bar.md` |
+| `workspace/frontend-common/public/document/component-description.md` |
+| `workspace/frontend-common/public/document/appointment.md` |
+| `workspace/frontend-common/README.md` |
+| `workspace/frontend-common/index.html` |
+| `workspace/lottery-web/README.md` |
+| `workspace/gmp-applet-admin/README.md` |
 </details></tool-use>
 
 _**Agent (default)**_
 
+<think><details><summary>Thought Process</summary>
+正在读取简历中的 HTML 内容，并梳理 Desktop 目录下的项目文档。重点筛选与 Vue3、TypeScript、B 端系统、AI Coding 及 RPA 自动化相关的经历，以便针对性修改简历。
+</details></think>
+
+_**Agent (default)**_
+
+继续读简历正文，并梳理 Desktop 里与岗位匹配的项目。
+
+_**Agent (default)**_
+
 <tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
-<summary>Tool use: **read_file_v2** • Read file: </summary>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/resume/index.html</summary>
 
 </details></tool-use>
 
@@ -66,19 +1647,625 @@ _**Agent (default)**_
 ```bash
 ls /Users/sakura/Desktop/workspace /Users/sakura/Desktop/mine 2>/dev/null; echo '---'; find /Users/sakura/Desktop/mine -maxdepth 2 -type d 2>/dev/null; echo '---'; ls /Users/sakura/Desktop/workspace | head -60
 ```
+
+```
+/Users/sakura/Desktop/mine:
+ai-deer-flow
+ai-frontend
+ai-mode-demo
+copilotKit
+python-demo
+resume
+
+/Users/sakura/Desktop/workspace:
+agent-web
+ai-frontend
+ai-ragflow
+bap-applet
+bap-frontend
+bi-web
+config-frontend
+display-web
+dp-web
+dtsp-web
+frontend-common
+gmp-applet-admin
+gmp-applet-web
+gmp-frontend
+gmp-h5
+jf-ui-mobile
+jf-ui-web
+jf-ui-wx
+kmp-child
+kmp-h5
+kmp-web
+lottery-web
+plugin-applet
+realtor-h5
+realtor-web
+sgj-dashboard-web
+sso-web
+wx-applet-cloud
+---
+/Users/sakura/Desktop/mine
+/Users/sakura/Desktop/mine/ai-frontend
+/Users/sakura/Desktop/mine/ai-frontend/mocks
+/Users/sakura/Desktop/mine/ai-frontend/.cursor
+/Users/sakura/Desktop/mine/ai-frontend/.pnpm-store
+/Users/sakura/Desktop/mine/ai-frontend/node_modules
+/Users/sakura/Desktop/mine/ai-frontend/tests
+/Users/sakura/Desktop/mine/ai-frontend/.specstory
+/Users/sakura/Desktop/mine/ai-frontend/docs
+/Users/sakura/Desktop/mine/ai-frontend/ai-dist
+/Users/sakura/Desktop/mine/ai-frontend/public
+/Users/sakura/Desktop/mine/ai-frontend/scripts
+/Users/sakura/Desktop/mine/ai-frontend/jenkins
+/Users/sakura/Desktop/mine/ai-frontend/.git
+/Users/sakura/Desktop/mine/ai-frontend/.vscode
+/Users/sakura/Desktop/mine/ai-frontend/src
+/Users/sakura/Desktop/mine/resume
+/Users/sakura/Desktop/mine/resume/.specstory
+/Users/sakura/Desktop/mine/resume/.git
+/Users/sakura/Desktop/mine/copilotKit
+/Users/sakura/Desktop/mine/python-demo
+/Users/sakura/Desktop/mine/python-demo/.specstory
+/Users/sakura/Desktop/mine/python-demo/Charles
+/Users/sakura/Desktop/mine/python-demo/.git
+/Users/sakura/Desktop/mine/python-demo/.vscode
+/Users/sakura/Desktop/mine/ai-mode-demo
+/Users/sakura/Desktop/mine/ai-mode-demo/packageDetail
+/Users/sakura/Desktop/mine/ai-mode-demo/skills
+/Users/sakura/Desktop/mine/ai-mode-demo/.git
+/Users/sakura/Desktop/mine/ai-mode-demo/data
+/Users/sakura/Desktop/mine/ai-mode-demo/pages
+/Users/sakura/Desktop/mine/ai-deer-flow
+/Users/sakura/Desktop/mine/ai-deer-flow/docker
+/Users/sakura/Desktop/mine/ai-deer-flow/frontend
+/Users/sakura/Desktop/min
+… (output truncated)
+```
 </details></tool-use>
 
 _**Agent (default)**_
 
 <tool-use data-tool-type="unknown" data-tool-name="ripgrep_raw_search"><details>
 <summary>Tool use: **ripgrep_raw_search**</summary>
-Status: **loading**
+
+Parameters:
+
+```json
+{
+  "caseInsensitive": false,
+  "path": "/Users/sakura/Desktop/mine/resume/index.html",
+  "pattern": "class=\"(name|summary|target|exp-|job|project|skill|achieve|edu|contact)"
+}
+```
+Additional data:
+
+```json
+{
+  "isPruned": true,
+  "outputMode": "content",
+  "path": "/Users/sakura/Desktop/mine/resume/index.html",
+  "pattern": "class=\"(name|summary|target|exp-|job|project|skill|achieve|edu|contact)",
+  "topFiles": [
+    {
+      "matchCount": 100,
+      "uri": "index.html"
+    }
+  ],
+  "totalFiles": 1,
+  "totalMatches": 100
+}
+```
+Status: **completed**
 
 </details></tool-use>
 
 _**Agent (default)**_
 
 <tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
-<summary>Tool use: **read_file_v2** • Read file: </summary>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/resume/index copy 2.html</summary>
 
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+正在梳理简历中与 AI、RPA 及自动化相关的项目经验，准备将其整合到前端开发岗位的 HTML 简历里。
+
+同时也在检查简历中是否有医疗或临床相关的项目经验。
+</details></think>
+
+_**Agent (default)**_
+
+接着挖 AI Agent、自动化/爬虫相关项目，以及能对应岗位加分项的具体材料。
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/workspace/agent-web/README.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/workspace/ai-frontend/AGENTS.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/ai-mode-demo/README.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/workspace/agent-web/AI_CODING_GUIDE.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="shell" data-tool-name="run_terminal_command_v2"><details>
+<summary>Tool use: **run_terminal_command_v2** • Run command: ls /Users/sakura/Desktop/mine/python-demo /Users/sakura/Desktop/mine/copilotKit /Users/sakura/Desktop/mine/ai-deer-flow 2&gt;/dev/null; head -40 /Users/sakura/Desktop/mine/python-demo/README.md 2&gt;/dev/null; head -40 /Users/sakura/Desktop/mine/copilotKit/README.md 2&gt;/dev/null; head -50 /Users/sakura/Desktop/mine/ai-deer-flow/README.md 2&gt;/dev/null; head -40 /Users/sakura/Desktop/workspace/bap-frontend/README.md 2&gt;/dev/null; head -40 /Users/sakura/Desktop/workspace/gmp-frontend/README.md 2&gt;/dev/null</summary>
+```bash
+ls /Users/sakura/Desktop/mine/python-demo /Users/sakura/Desktop/mine/copilotKit /Users/sakura/Desktop/mine/ai-deer-flow 2>/dev/null; head -40 /Users/sakura/Desktop/mine/python-demo/README.md 2>/dev/null; head -40 /Users/sakura/Desktop/mine/copilotKit/README.md 2>/dev/null; head -50 /Users/sakura/Desktop/mine/ai-deer-flow/README.md 2>/dev/null; head -40 /Users/sakura/Desktop/workspace/bap-frontend/README.md 2>/dev/null; head -40 /Users/sakura/Desktop/workspace/gmp-frontend/README.md 2>/dev/null
+```
+
+```
+/Users/sakura/Desktop/mine/ai-deer-flow:
+AGENTS.md
+CLAUDE.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+Install.md
+LICENSE
+Makefile
+README.md
+README_fr.md
+README_ja.md
+README_ru.md
+README_zh.md
+SECURITY.md
+backend
+config.example.yaml
+config.yaml
+deer-flow.code-workspace
+docker
+docs
+extensions_config.example.json
+extensions_config.json
+frontend
+pr-build
+scripts
+skills
+
+/Users/sakura/Desktop/mine/copilotKit:
+
+/Users/sakura/Desktop/mine/python-demo:
+Charles
+# 🦌 DeerFlow - 2.0
+
+English | [中文](./README_zh.md) | [日本語](./README_ja.md) | [Français](./README_fr.md) | [Русский](./README_ru.md)
+
+[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](./backend/pyproject.toml)
+[![Node.js](https://img.shields.io/badge/Node.js-22%2B-339933?logo=node.js&logoColor=white)](./Makefile)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+<a href="https://trendshift.io/repositories/14699" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14699" alt="bytedance%2Fdeer-flow | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥
+
+DeerFlow (**D**eep **E**xploration and **E**fficient **R**esearch **Flow**) is an open-source **super agent harness** that orchestrates **sub-agents**, **memory**, and **sandboxes** to do almost anything — powered by **extensible skills**.
+
+https://github.com/user-attachments/assets/a8bcadc4-e040-4cf2-8fda-dd768b999c18
+
+> [!NOTE]
+> **DeerFlow 2.0 is a ground-up rewrite.** It shares no code with v1. If you're looking for the original Deep Research framework, it's maintained on the [`1.x` branch](https://github.com/bytedance/deer-flow/tree/main-1.x) — contributions there are still welcome. Active development has moved to 2.0.
+
+## Official Website
+
+[<img width="2880" height="1600" alt
+… (output truncated)
+```
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="unknown" data-tool-name="ripgrep_raw_search"><details>
+<summary>Tool use: **ripgrep_raw_search**</summary>
+
+Parameters:
+
+```json
+{
+  "caseInsensitive": false,
+  "glob": "**/README.md",
+  "path": "/Users/sakura/Desktop/mine",
+  "pattern": "RPA|爬虫|playwright|puppeteer|selenium|自动化|Agent|Copilot|RAG|数据采集"
+}
+```
+Additional data:
+
+```json
+{
+  "isPruned": true,
+  "outputMode": "content",
+  "path": "/Users/sakura/Desktop/mine",
+  "pattern": "RPA|爬虫|playwright|puppeteer|selenium|自动化|Agent|Copilot|RAG|数据采集",
+  "topFiles": [
+    {
+      "matchCount": 6,
+      "uri": "mine/ai-mode-demo/README.md"
+    },
+    {
+      "matchCount": 9,
+      "uri": "mine/ai-deer-flow/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "mine/ai-deer-flow/frontend/README.md"
+    },
+    {
+      "matchCount": 6,
+      "uri": "mine/ai-deer-flow/backend/README.md"
+    },
+    {
+      "matchCount": 2,
+      "uri": "mine/ai-frontend/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "mine/python-demo/Charles/README.md"
+    }
+  ],
+  "totalFiles": 6,
+  "totalMatches": 25
+}
+```
+Status: **completed**
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="unknown" data-tool-name="ripgrep_raw_search"><details>
+<summary>Tool use: **ripgrep_raw_search**</summary>
+
+Parameters:
+
+```json
+{
+  "caseInsensitive": false,
+  "glob": "**/README.md",
+  "path": "/Users/sakura/Desktop/workspace",
+  "pattern": "医疗|医药|临床|GMP|药|医院|健康"
+}
+```
+Additional data:
+
+```json
+{
+  "isPruned": true,
+  "outputMode": "content",
+  "path": "/Users/sakura/Desktop/workspace",
+  "pattern": "医疗|医药|临床|GMP|药|医院|健康",
+  "topFiles": [
+    {
+      "matchCount": 1,
+      "uri": "workspace/gmp-applet-web/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "workspace/ai-ragflow/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "workspace/gmp-frontend/.cursor/rules/README.md"
+    }
+  ],
+  "totalFiles": 3,
+  "totalMatches": 3
+}
+```
+Status: **completed**
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+正在梳理现有项目文件，重点查看 python-demo 中的 RPA/爬虫经验，以及 GMP 和 wxa-skills 中的 AI Agent 经验，为简历修改做准备。
+
+发现 gmp-frontend 可能是景枫品牌项目。用户 9 年经验远超岗位要求，但简历无需虚构医疗背景，应聚焦 Vue3、TypeScript、B 端系统、前端工程化及 AI Coding 等核心优势。
+
+已确认简历可直接呈现的加分项：AI Agent（ai-frontend、agent-web、ai-mode-demo）、RPA/Web 自动化（python-demo、Charles 脚本），以及 B 端系统经验。GMP 属于物业管理，不涉及医疗背景，无需虚构。接下来将检查 python-demo 与 visual tests 中的自动化细节。
+</details></think>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/python-demo/Charles/README.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="shell" data-tool-name="run_terminal_command_v2"><details>
+<summary>Tool use: **run_terminal_command_v2** • Run command: ls /Users/sakura/Desktop/mine/python-demo/Charles/scripts 2&gt;/dev/null | head -30; ls /Users/sakura/Desktop/workspace/bap-frontend/apps/bap-web/visual-tests 2&gt;/dev/null; head -30 /Users/sakura/Desktop/workspace/ai-frontend/README.md 2&gt;/dev/null; head -40 /Users/sakura/Desktop/workspace/gmp-frontend/CLAUDE.md 2&gt;/dev/null; rg -l &#34;playwright|puppeteer|爬虫|selenium|RPA&#34; /Users/sakura/Desktop/mine/python-demo /Users/sakura/Desktop/workspace/bap-frontend --glob &#39;!**/node_modules/**&#39; 2&gt;/dev/null | head -20</summary>
+```bash
+ls /Users/sakura/Desktop/mine/python-demo/Charles/scripts 2>/dev/null | head -30; ls /Users/sakura/Desktop/workspace/bap-frontend/apps/bap-web/visual-tests 2>/dev/null; head -30 /Users/sakura/Desktop/workspace/ai-frontend/README.md 2>/dev/null; head -40 /Users/sakura/Desktop/workspace/gmp-frontend/CLAUDE.md 2>/dev/null; rg -l "playwright|puppeteer|爬虫|selenium|RPA" /Users/sakura/Desktop/mine/python-demo /Users/sakura/Desktop/workspace/bap-frontend --glob '!**/node_modules/**' 2>/dev/null | head -20
+```
+
+````
+__init__.py
+capture
+dianping
+utils
+alarm-escalation
+alarm-escalation.html
+# ai-frontend
+
+企业微信场景下的 AG-UI 协议驱动、受控 Generative UI 前端。
+
+## Agent 传输层
+
+当前仅使用 **LangGraph runs stream**：`LangGraphStreamTransport` 将原生 SSE 映射为 `AnyAgentEvent` 后进入 `Dispatcher`。
+
+```bash
+# 真实后端联调：.env.development.local 设 VITE_USE_MOCK=false + LG_PROXY_TARGET（见 vite.config.ts）
+# 离线开发：VITE_USE_MOCK=true 时 MSW 回放 mocks/sse/dev-knowledge-stream.txt
+```
+
+BFF 输出标准 AG-UI SSE 时的接入说明见 [docs/BFF-AGUI-SSE.md](docs/BFF-AGUI-SSE.md)（当前未实现 `FetchSSETransport`）。
+
+LangGraph 原生协议只允许封装在 `src/core/api/langgraph.ts` 与 `src/core/runtime/langgraph/*`，UI、stores、cards 仍然只消费 `protocol.ts` 定义的标准事件。
+
+## 文档
+
+- [项目背景与设计简述](docs/项目设计简述.md)
+- [目录分层设计](docs/目录分层设计.md)
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Structure
+
+Vue 2.7.16 monorepo using pnpm workspaces and Turbo for build orchestration.
+
+- `apps/gmp-web` - PC admin dashboard (port 9001)
+- `apps/gmp-h5` - Mobile H5 app (WeChat WebView)
+- `packages/apis` - Unified HTTP request layer (`@gmp/apis`)
+- `packages/utils` - Shared utilities (`@gmp/utils`)
+- `packages/eslint-config` - Shared ESLint configuration
+
+## Development Commands
+
+```bash
+# Start development (interactive prompt to choose gmp-web or gmp-h5)
+pnpm dev
+
+# Start specific app
+pnpm dev:web    # Start gmp-web on port 9001
+pnpm dev:h5     # Start gmp-h5
+
+# Build
+pnpm build      # Build gmp-web
+pnpm build:h5   # Build gmp-h5
+
+# Lint with auto-fix
+pnpm lint
+
+# Clean all node_modules
+pnpm clean
+```
+
+## Technical Constraints
+
+**Must NOT use:**
+- Vue 3 syntax (Composition API, `setup()`, `defineComponent`, `ref/reactive`)
+- Direct `this.$request.post/get()` calls
+/Users/sakura/Desktop/workspace/bap-frontend/apps/bap-web/src/feature-docs/vrv-air-condition-management-handoff.md
+/Users/sakura/Desktop/workspace/bap-frontend/packages/components/components-dist/style.css
+/Users/sakura/Desktop/workspace/bap-frontend/apps/bap-web/playwright.
+… (output truncated)
+````
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/ai-frontend/docs/交互卡片业务扩展记录.md</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="unknown" data-tool-name="ripgrep_raw_search"><details>
+<summary>Tool use: **ripgrep_raw_search**</summary>
+
+Parameters:
+
+```json
+{
+  "caseInsensitive": false,
+  "glob": "**/README.md",
+  "path": "/Users/sakura/Desktop/workspace/gmp-frontend",
+  "pattern": "景枫|运营|会员|BAP|GMP|Agent|舆情"
+}
+```
+Additional data:
+
+```json
+{
+  "isPruned": true,
+  "outputMode": "content",
+  "path": "/Users/sakura/Desktop/workspace/gmp-frontend",
+  "pattern": "景枫|运营|会员|BAP|GMP|Agent|舆情",
+  "topFiles": [
+    {
+      "matchCount": 6,
+      "uri": "workspace/gmp-frontend/apps/gmp-web/src/components/StatisticsCard/README.md"
+    },
+    {
+      "matchCount": 2,
+      "uri": "workspace/gmp-frontend/apps/gmp-h5/public/appletAssets/gmp-applet-web/static/bap/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "workspace/gmp-frontend/apps/gmp-h5/README.md"
+    },
+    {
+      "matchCount": 1,
+      "uri": "workspace/gmp-frontend/.cursor/rules/README.md"
+    }
+  ],
+  "totalFiles": 4,
+  "totalMatches": 10
+}
+```
+Status: **completed**
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+已明确目标岗位为正大天晴临床数字化前端开发。接下来将结合用户的工作经历与该职位的职责要求，调整HTML简历中的相关内容。
+
+正在按JD关键词重构简历内容：突出Vue3/TS、中大型B端系统、工程化建设、AI Coding及Agent相关经验；将工作经历与岗位职责对齐，强调业务页面开发、前后端协作、代码质量与工程规范；同时优先整理项目文档以匹配临床数字化方向。
+
+梳理出五项可直接对应临床数字化方向的核心项目：AI Agent 智能应用前端、Agent 管理后台、Monorepo 工程化、B端运营管理平台，以及数据采集与自动化脚本。将原 toC 小程序调整为低优先级。
+
+工作年限保持真实为9年，不虚构医疗背景。重点提炼可迁移能力：复杂B端表单与流程开发、合规类SaaS系统经验、设备监控与稳定性保障，以及AI Agent在业务流程中的应用。同时考虑将gmp项目中的AI舆情分析作为数据相关经验补充。
+
+检查了index.html的样式细节。发现CSS变量中混用了破折号与连字符，可能导致变量解析异常。但移动端部分已正确使用双横线，因此决定优先聚焦简历内容的修改，除非样式明显损坏才一并修复。
+
+确定了简历标题方向：拟采用“前端开发工程师 · Vue3 / 企业级业务系统”或“资深前端开发（临床数字化方向）”。技能模块将重新排序，把 Vue3、TypeScript、Pinia、组件化与状态管理前置，突出 AI Coding 及 Agent 相关经验，并补充 Playwright、mitmproxy 或 Python 爬虫采集等自动化能力。同时会精简 DevOps 类冗余信息，确保简历内容与岗位职责高度对齐。
+
+正在细化项目与工作经历的重写策略。计划将AI Agent智能应用前端作为核心亮点，突出其Generative UI、LangGraph与Vue3技术栈；同时将Agent管理后台、Monorepo工程整合及B端运营管理平台作为主要项目展示。评价数据采集自动化将作为RPA与爬虫能力的加分项保留。会员小程序等toC项目将被降级或移除，以压缩篇幅并保持A4打印的紧凑性。同时注意到用户现居南京江宁区，与正大天晴在南京区域的业务布局相契合。
+</details></think>
+
+_**Agent (default)**_
+
+已对齐岗位关键词：强化 Vue3/TS、B 端工程化、AI Coding/Agent，并补上数据采集与自动化经历；不会虚构医疗项目经验。开始改 `index.html` 正文。
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="write" data-tool-name="edit_file_v2"><details>
+<summary>Tool use: **edit_file_v2** • Edit file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="write" data-tool-name="edit_file_v2"><details>
+<summary>Tool use: **edit_file_v2** • Edit file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="write" data-tool-name="edit_file_v2"><details>
+<summary>Tool use: **edit_file_v2** • Edit file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="write" data-tool-name="edit_file_v2"><details>
+<summary>Tool use: **edit_file_v2** • Edit file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+发现简历中一处细节偏差：原财务SaaS项目的技术栈描述为Vue + iView，未包含TypeScript，但当前版本误写为Vue + TypeScript。
+</details></think>
+
+_**Agent (default)**_
+
+修正网兜那段表述，避免夸大 TypeScript 使用。
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="write" data-tool-name="edit_file_v2"><details>
+<summary>Tool use: **edit_file_v2** • Edit file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+正在检查简历正文部分的最终效果。
+</details></think>
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="read" data-tool-name="read_file_v2"><details>
+<summary>Tool use: **read_file_v2** • Read file: /Users/sakura/Desktop/mine/resume/index.html</summary>
+
+</details></tool-use>
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+简历已按目标岗位完成调整。正在梳理具体修改内容，并说明与招聘JD的匹配关系。
+
+未虚构医疗相关工作经历。
+</details></think>
+
+_**Agent (default)**_
+
+已按正大天晴「临床数字化前端」JD 改好 `resume/index.html`，主要对齐点如下：
+
+**定位与摘要**  
+目标岗改为「前端开发工程师 · Vue3 / 企业级业务系统 / AI+研发」，摘要突出：中大型 B 端、工程规范、联调与稳定性、AI Coding、Agent 智能应用。
+
+**技术栈（对 JD）**  
+强化 Vue3 / TS / Pinia、组件化与工程化、AI Coding + Agent；加分项补上 Playwright、mitmproxy、Python 采集。弱化与本岗关联度较低的地图/小程序堆叠。
+
+**经历写法（对职责）**  
+景枫经历按岗位职责重写：业务页面与组件、需求协作、工程规范、质量与稳定性、AI+研发模式、Agent 前后端经验、自动化/数据采集。财务 SAAS 强调强流程 B 端独立交付。
+
+**项目卡片**  
+优先展示：AI Agent Generative UI、Agent 管理端、B 端 + Monorepo、评价数据采集流水线；弱化 toC 会员小程序等与本岗匹配度较低的内容。
+
+**说明**  
+你的 Desktop 项目里没有直接的医疗/临床项目，简历未虚构医药背景；用 B 端复杂业务 + Agent + 自动化去覆盖「优先/加分」。若面试想补短板，可准备一句：复杂流程型业务系统经验可迁移到临床数字化场景。
+
+需要的话我可以再出一版更偏「压缩到一页打印」或「更偏临床业务话术」的微调。
+
+---
+
+_**User**_
+
+帮我把这份html网页输出成pdf文件和图片
+
+---
+
+_**Agent (default)**_
+
+<think><details><summary>Thought Process</summary>
+用户希望将HTML简历导出为PDF和图片格式。
+
+正在考虑使用 Playwright 或 Chrome 无头模式来渲染 HTML 并生成 PDF 和截图。需要先确认本地是否已安装相关工具。
+</details></think>
+
+_**Agent (default)**_
+
+用无头浏览器把简历 HTML 渲成 PDF 和图片。
+
+_**Agent (default)**_
+
+<tool-use data-tool-type="shell" data-tool-name="run_terminal_command_v2"><details>
+<summary>Tool use: **run_terminal_command_v2** • Run command: which google-chrome chromium chromium-browser &#34;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#34; 2&gt;/dev/null; which npx node; ls &#34;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#34; 2&gt;/dev/null; node -e &#34;console.log(process.version)&#34;</summary>
+```bash
+which google-chrome chromium chromium-browser "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" 2>/dev/null; which npx node; ls "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" 2>/dev/null; node -e "console.log(process.version)"
+```
 </details></tool-use>
